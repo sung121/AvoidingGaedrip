@@ -396,3 +396,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# these lines under the this line is setting for my directX Framework 
+!Gaedrip/_Libraries/
