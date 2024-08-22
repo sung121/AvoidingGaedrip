@@ -398,4 +398,10 @@ FodyWeavers.xsd
 *.sln.iml
 
 # these lines under the this line is setting for my directX Framework 
+
+#applying ignore rules first
+Gaedrip/*
+
+# Gaedrip/_Libraries/ don't ignore _Libraries folder and files under the folder
 !Gaedrip/_Libraries/
+!Gaedrip/_Libraries/**
