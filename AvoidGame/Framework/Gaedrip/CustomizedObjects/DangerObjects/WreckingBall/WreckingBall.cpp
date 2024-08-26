@@ -1,6 +1,10 @@
 #include "Framework.h"
 #include "WreckingBall.h"
 
+#include "BasicObjects/Collider.h"
+#include "Geomatries/TextureRect.h"
+#include "Utilities/Transform.h"
+
 Wreckingball::Wreckingball()
 {
 	transform = Transform(WinCenterPos, { 300, 300, 0 }, 0);

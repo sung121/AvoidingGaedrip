@@ -1,10 +1,11 @@
 #pragma once
-#include "BasicObjects/GameObject.h"
-#include "Gaedrip/CustomizedObjects/Entities/Player.h"
-#include "UserInterfaceManager.h"
-#include "LevelsManager.h"
 
-class LevelsManager;
+
+class LevelManager;
+class GameObject;
+class Player;
+class UserInterfaceManager;
+class Collider;
 
 class GameManager
 {
@@ -15,7 +16,7 @@ public:
 	static void ApplyGravity(Player* player, float spd = 1);
 	static void ApplyGravityPlayer(Player* player, float spd = 1);
 
-	static bool CheckCollide(Collider* , Collider* );
+	static bool CheckCollide(Collider* firstCollider , Collider* secondCollider);
 	
 	static float CaculateDistance(const Vector3& position1, const Vector3& position2);
 

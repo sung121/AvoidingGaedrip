@@ -1,6 +1,5 @@
 #pragma once
-#include "Framework.h"
-// 클래스 선언
+
 class Transform
 {
 public:

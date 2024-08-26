@@ -1,294 +1,455 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Collider" Collapsed="true">
-    <Position X="19.25" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAQAAAA=</HashCode>
-      <FileName>Collider.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="GameObject" Collapsed="true">
-    <Position X="3.5" Y="5.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>ABQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAIAAAA=</HashCode>
-      <FileName>Cups\BasicObjects\GameObject.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Player" Collapsed="true">
-    <Position X="2" Y="9" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>IARASFkGCgAAEARBAQBcIAiABwoQZJAmJxAIAwgAABg=</HashCode>
-      <FileName>Cups\Player.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Transform" Collapsed="true">
-    <Position X="6" Y="4.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAACCAAACAAICIIAQAAAAAQggAAAAAAAAAAIA=</HashCode>
-      <FileName>Cups\Transform.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="AnimationRect" Collapsed="true">
-    <Position X="9.25" Y="5.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>JgQAAACAAIAASAIAAAAAAEAAAAAAAgAAoBAgAAQBAAA=</HashCode>
-      <FileName>Geomatries\AnimationRect.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Rect" Collapsed="true">
-    <Position X="17.5" Y="2.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAQA0CAAAqCAgGCAEMCILEAEBC6SBoigAB4AgISEAQI=</HashCode>
-      <FileName>Geomatries\Rect.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="TextureRect" Collapsed="true">
-    <Position X="9" Y="6.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAQA0AJAAqCAgGCAEcCKpEgABAwUMgioDBYAQICEBUA=</HashCode>
-      <FileName>Geomatries\TextureRect.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="IObject" Collapsed="true">
-    <Position X="14" Y="2.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAABABAAAAAABACAAACAAA=</HashCode>
-      <FileName>Interfaces\IObject.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="PlayerHigh" Collapsed="true">
-    <Position X="4.25" Y="9" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAQAAAABAIFAAIAwFAgAAAAAAAAgAAIBgBAACUAAICA=</HashCode>
-      <FileName>Cups\PlayerHigh.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="IndexBuffer" Collapsed="true">
-    <Position X="19.25" Y="1.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AASAAAAAAAAAAAgABAAAAQABAAAAAEAAAAFACBAAAAA=</HashCode>
-      <FileName>Renders\IA\IndexBuffer.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="InputLayout" Collapsed="true">
-    <Position X="21" Y="1.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAEACAAAAABAAAAA=</HashCode>
-      <FileName>Renders\IA\InputLayout.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="VertexBuffer" Collapsed="true">
-    <Position X="21" Y="3.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>ABSAAAAAAAAAAAgABAAAAQAAAAAAAEAAAAFACBAAAAA=</HashCode>
-      <FileName>Renders\IA\VertexBuffer.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Texture2D" Collapsed="true">
-    <Position X="14" Y="3.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAgAAAAAAAAABAAAAAAAAABAQAAAAkAAAAAAAEAQACA=</HashCode>
-      <FileName>Renders\Resources\Texture2D.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Textures" Collapsed="true">
-    <Position X="15.75" Y="3.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAgAIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Renders\Resources\Texture2D.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="States" Collapsed="true">
-    <Position X="19.25" Y="2.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AECAAAgEAAAAAGIAAAAAEAQABAQAAEAAAAQkEAAAAAA=</HashCode>
-      <FileName>Renders\States.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="D3DEnumAdapterInfo" Collapsed="true">
-    <Position X="21" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAEACAAAAACAAAAAgAAAAAAACAAAAAAAAA=</HashCode>
-      <FileName>Systems\Graphics.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="D3DEnumOutputInfo" Collapsed="true">
-    <Position X="14" Y="1.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAACAAAAAAAAAAAAAAAAAgACAAAAAAAAAACACAAAAA=</HashCode>
-      <FileName>Systems\Graphics.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Window" Collapsed="true">
-    <Position X="14" Y="4.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAASAAAABAAAAASAAAAAI=</HashCode>
-      <FileName>Systems\Window.h</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="AnimationClip" Collapsed="true">
-    <Position X="14" Y="0.5" Width="1.5" />
+    <Position X="34.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IQAAAAAAAAEAAAAAAAEAAAEAAAAAAgAAAAAAAAAIAAA=</HashCode>
       <FileName>Utilities\Animator.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Animator" Collapsed="true">
-    <Position X="15.75" Y="0.5" Width="1.5" />
+    <Position X="36.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAggQAgAEAQAAAAQAAABAwIAGgQAgEAKAQAAQAAAA=</HashCode>
       <FileName>Utilities\Animator.h</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="WorldBuffer" Collapsed="true">
+    <Position X="8.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAQEAAAAAA=</HashCode>
+      <FileName>Renders\Resources\GlobalBuffer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VPBuffer" Collapsed="true">
+    <Position X="10.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAABAAAAAAAQAAAQAAAAAAA=</HashCode>
+      <FileName>Renders\Resources\GlobalBuffer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rect" Collapsed="true">
+    <Position X="14.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAUCIAACAAgGAAkICAIAAABAIUAoCoABkAAISEAQA=</HashCode>
+      <FileName>Geomatries\Rect.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Reinhardt" Collapsed="true">
+    <Position X="18.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIAAAAAAAAAAABAAAAAAAEAEAAAAABAAUAAAAAA=</HashCode>
+      <FileName>Gaedrip\CustomizedObjects\DangerObjects\Reinhardt\Reinhardt.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="String" Collapsed="true">
+    <Position X="34.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAIAAEAAAAAAAAAAAgAAAAAAAAQAAAACA=</HashCode>
+      <FileName>Utilities\String.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player" Collapsed="true">
+    <Position X="25.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EIaCAAhlRtBRTARIAhDgIAIkRAgARjgFFBJAFQAJCBA=</HashCode>
+      <FileName>Gaedrip\CustomizedObjects\Entities\Player.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameObject" Collapsed="true">
+    <Position X="20.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABQAAAAAACAAAAAAAAAAAAAAAAAEAAAAABAAAAIAAAA=</HashCode>
+      <FileName>BasicObjects\GameObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextureRect" Collapsed="true">
+    <Position X="8.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAUAJAACAAgGAAEICCpAAQBAAUIgCoDBIAAICEAUA=</HashCode>
+      <FileName>Geomatries\TextureRect.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VertexBuffer" Collapsed="true">
+    <Position X="41.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABSAAAAAAAAAAAgABAAAAQAAAAAAAEAAAAFACBAAAAA=</HashCode>
+      <FileName>Renders\IA\VertexBuffer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HammerRight" Collapsed="true">
+    <Position X="16.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAgAAAAABAAAAAAAAAAAAAAABAAUEAAAAA=</HashCode>
+      <FileName>Gaedrip\CustomizedObjects\DangerObjects\Reinhardt\HammerRight.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DangerBox" Collapsed="true">
+    <Position X="20.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUAAAAAABAIAIAAQDBAIgAAAAAEAAAAABEAFAAAAAQ=</HashCode>
+      <FileName>Gaedrip\CustomizedObjects\DangerObjects\DangerBox.h</FileName>
+    </TypeIdentifier>
+  </Class>
   <Class Name="BoundingBox" Collapsed="true">
-    <Position X="17.5" Y="0.5" Width="1.5" />
+    <Position X="38" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAIAIAAAAFAAAAAIAAAAACAAAAAAAARQAEAACAA=</HashCode>
       <FileName>Utilities\BoundingBox.h</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Wreckingball" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAABAAAAAAAAAEAAAAABAAUACAAgA=</HashCode>
+      <FileName>Gaedrip\CustomizedObjects\DangerObjects\WreckingBall\WreckingBall.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Keyboard" Collapsed="true">
+    <Position X="18" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAwAAAIAAAAAAAACAAAAAAAAgAAAAAABQAAAAAAAAAI=</HashCode>
+      <FileName>Systems\Keyboard.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IShader" Collapsed="true">
+    <Position X="14.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAACAAAAAAAAAEAQBAAEAABAAAA=</HashCode>
+      <FileName>Renders\Shaders\IShader.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndexBuffer" Collapsed="true">
+    <Position X="38" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAAAAAAAAAAAgABAAAAQABAAAAAEAAAAFACBAAAAA=</HashCode>
+      <FileName>Renders\IA\IndexBuffer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InputLayout" Collapsed="true">
+    <Position X="39.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAEACAAAAABAAAAA=</HashCode>
+      <FileName>Renders\IA\InputLayout.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Items" Collapsed="true">
+    <Position X="34.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Gaedrip\Items\Items.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Background" Collapsed="true">
+    <Position X="27.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAIgAAAAAAAAAAABAgAAAAAAA=</HashCode>
+      <FileName>Gaedrip\Backgrounds\Background.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealPack" Collapsed="true">
+    <Position X="29.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAABAAIABIAAAAAAAAAAAAAABAAUAQAAAA=</HashCode>
+      <FileName>Gaedrip\Items\HealPack.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IObject" Collapsed="true">
+    <Position X="41.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAABAAAAAAAAAAAAAAAAAABABAAAAAABACAAACAAA=</HashCode>
+      <FileName>Interfaces\IObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Collider" Collapsed="true">
+    <Position X="14.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwAAAIAAAAAAAACAAAAAAAQAAAAAAAAABYAEAAAAAA=</HashCode>
+      <FileName>BasicObjects\Collider.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LevelReinhardt" Collapsed="true">
+    <Position X="36.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQMABAAAAAAAAAAAAAAAAAAAABAACAAAQACAAQAAgA=</HashCode>
+      <FileName>Gaedrip\Levels\LevelReinhardt.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ground" Collapsed="true">
+    <Position X="14" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAQEAAABAAAAAAAAAEAAAAABAAUAAAECA=</HashCode>
+      <FileName>Gaedrip\CustomizedObjects\Topography\Ground.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Path" Collapsed="true">
+    <Position X="39.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAgAAAACAAAEBAAAAAAQEABAACFIAABIAxAAAA=</HashCode>
+      <FileName>Utilities\Path.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Time" Collapsed="true">
+    <Position X="20.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QgQAoAAAACIAAAAAAAEAAkAQAAgAAgCIIAAAAEAAAQA=</HashCode>
+      <FileName>Systems\Time.h</FileName>
+    </TypeIdentifier>
+  </Class>
   <Class Name="Values" Collapsed="true">
-    <Position X="19.25" Y="3.5" Width="1.5" />
+    <Position X="39.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAGgASAACCIAhAAAAIAAQAANAAAAAgAAEAAABCAAAE=</HashCode>
       <FileName>Utilities\DirectHelper.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DXMath" Collapsed="true">
-    <Position X="15.75" Y="1.5" Width="1.5" />
+    <Position X="34.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAABAAAQAAEAACACAAAAAAAAAAAAAAAEAAAAAAAACAA=</HashCode>
       <FileName>Utilities\DirectHelper.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Path" Collapsed="true">
-    <Position X="15.75" Y="2.5" Width="1.5" />
+  <Class Name="StandardTransform" Collapsed="true">
+    <Position X="11.5" Y="10.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAgAgAAAACAAAEBAAAAAAQEABAACFIAABIAxAAAA=</HashCode>
-      <FileName>Utilities\Path.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="String" Collapsed="true">
-    <Position X="21" Y="2.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AACAAAAAAAAAIAAEAAAAAAAAAAAgAAAAAAAAQAAAACA=</HashCode>
-      <FileName>Utilities\String.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="RectObject" Collapsed="true">
-    <Position X="4.5" Y="7" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AARCAAAAAAAAAAAAAAAAIAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Cups\BasicObjects\RectObject.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="TextureRectObject" Collapsed="true">
-    <Position X="0.5" Y="7" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAQAAAAAA=</HashCode>
-      <FileName>Cups\BasicObjects\TextureRectObject.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="ColliderBox" Collapsed="true">
-    <Position X="6.75" Y="7.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAgAAAAAAADAAAgAAACA=</HashCode>
-      <FileName>Cups\ColliderBox.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="AnimationRectObject" Collapsed="true">
-    <Position X="2.5" Y="7" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAQAAEAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Cups\BasicObjects\AnimationRectObject.h</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAICIIAAAAAAAAgoAAAAgAAAIAAA=</HashCode>
+      <FileName>Utilities\StandardTransform.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GameManager" Collapsed="true">
-    <Position X="28" Y="1" Width="1.5" />
+    <Position X="36.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAABAAACAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
-      <FileName>Cups\Managers\GameManager.h</FileName>
+      <HashCode>AABBAAACAAAAAAAAACAAAAAAAAAAAAAAAABAAEAAAAA=</HashCode>
+      <FileName>Gaedrip\Managers\GameManager.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Struct Name="TextureDesc" Collapsed="true">
-    <Position X="19.25" Y="5.75" Width="1.5" />
+  <Class Name="Gui" Collapsed="true">
+    <Position X="13.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAQAQAAAAQAAAAAAAkAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AEQAAAAAAAAAAAAAAAAAEAAAAAAAAABAAJAAAAEAAAA=</HashCode>
+      <FileName>Utilities\Gui.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Platform" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAABAAAAAAAAAAAAAAAAAACBAAUAAAAAA=</HashCode>
+      <FileName>Gaedrip\CustomizedObjects\Topography\Platform.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Texture2D" Collapsed="true">
+    <Position X="36.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAABAAAAAAAAABAQAAAAkAAAAAAAEAQACA=</HashCode>
       <FileName>Renders\Resources\Texture2D.h</FileName>
     </TypeIdentifier>
-  </Struct>
+  </Class>
+  <Class Name="Textures" Collapsed="true">
+    <Position X="38" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Renders\Resources\Texture2D.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HammerLeft" Collapsed="true">
+    <Position X="23" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAQAAAAAABAQAAAAAAAAAAAAABAAUAAAAAA=</HashCode>
+      <FileName>Gaedrip\CustomizedObjects\DangerObjects\Reinhardt\HammerLeft.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="States" Collapsed="true">
+    <Position X="41.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AECAAAgEAAAAAGIAAAAAEAQABAQAAEAAAAQkEAAAAAA=</HashCode>
+      <FileName>Renders\States.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PixelShader" Collapsed="true">
+    <Position X="15.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAgAAEAABAAACEBAAAA=</HashCode>
+      <FileName>Renders\Shaders\PixelShader.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Graphics" Collapsed="true">
+    <Position X="9" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACICCAIiAAAAAAAABAAIAAAQDAAAERgEAgEAACEKAAE=</HashCode>
+      <FileName>Systems\Graphics.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="D3DEnumAdapterInfo" Collapsed="true">
+    <Position X="39.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEACAAAAACAAAAAgAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Systems\Graphics.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="D3DEnumOutputInfo" Collapsed="true">
+    <Position X="41.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAgACAAAAAAAAAACACAAAAA=</HashCode>
+      <FileName>Systems\Graphics.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Window" Collapsed="true">
+    <Position X="34.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAASAAAABAAAAASAAAAAI=</HashCode>
+      <FileName>Systems\Window.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShaderBuffer" Collapsed="true">
+    <Position X="9.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAEAAAAAACAIABAAABQAEAAAAA=</HashCode>
+      <FileName>Renders\Resources\ShaderBuffer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VertexShader" Collapsed="true">
+    <Position X="13.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAEAAAAAAAAAAAEAABAAACEBAAAA=</HashCode>
+      <FileName>Renders\Shaders\VertexShader.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserInterfaceManager" Collapsed="true">
+    <Position X="32" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYQAAAAQECEABARAQAIIAEggAAAAAAAAAxEAAABABAQ=</HashCode>
+      <FileName>Gaedrip\Managers\UserInterfaceManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Transform" Collapsed="true">
+    <Position X="11.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAACCAAACAAMCIIAQQAAQAQggAAAAgAAAAAIA=</HashCode>
+      <FileName>Utilities\Transform.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimationRect" Collapsed="true">
+    <Position X="8.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JgQAAACAAIAASAIAAAAAAEAACAAAAgAAoBAgAAQBAAA=</HashCode>
+      <FileName>Geomatries\AnimationRect.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LevelsManager" Collapsed="true">
+    <Position X="38" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAQ4OBAAgIBABiSAAAAECCAAAYABgAERBJIGEIyCAgA=</HashCode>
+      <FileName>Gaedrip\Managers\LevelsManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SingletonBase&lt;T&gt;" Collapsed="true">
+    <Position X="14.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAFAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utilities\SingletonBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mouse" Collapsed="true">
+    <Position X="11.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQACCIAACBEAAgAQAAwIAAEAAAABBAAQEACAAAIIAI=</HashCode>
+      <FileName>Systems\Mouse.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sounds" Collapsed="true">
+    <Position X="15.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQgAAAAAAAAIICABAAAAAAAAAQECCCApAAAAAgCIAA=</HashCode>
+      <FileName>Systems\Sound.h</FileName>
+    </TypeIdentifier>
+  </Class>
   <Struct Name="VertexColor" Collapsed="true">
-    <Position X="21" Y="5.75" Width="1.5" />
+    <Position X="34.5" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAoAAAAAAAAABAAAIAAAAAAAAACAAAAAAAAAAAA=</HashCode>
       <FileName>Renders\Resources\VertexType.h</FileName>
     </TypeIdentifier>
   </Struct>
   <Struct Name="VertexTexture" Collapsed="true">
-    <Position X="14" Y="6.75" Width="1.5" />
+    <Position X="36.25" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAIAAAAAAAAABAAAIAAAAAAAACAAAAAAAAAAAgA=</HashCode>
       <FileName>Renders\Resources\VertexType.h</FileName>
     </TypeIdentifier>
   </Struct>
-  <Struct Name="DXDesc" Collapsed="true">
-    <Position X="15.75" Y="5.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>ACAAAAAAAAAAAAQAQAAAAAAAAABAAAAAAAACAAAAAAA=</HashCode>
-      <FileName>Systems\Window.h</FileName>
-    </TypeIdentifier>
-  </Struct>
   <Struct Name="RectEdge" Collapsed="true">
-    <Position X="17.5" Y="5.75" Width="1.5" />
+    <Position X="38" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAEAA=</HashCode>
       <FileName>Utilities\BoundingBox.h</FileName>
     </TypeIdentifier>
   </Struct>
   <Struct Name="AxisData" Collapsed="true">
-    <Position X="14" Y="5.75" Width="1.5" />
+    <Position X="34.5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAQAAAA=</HashCode>
       <FileName>Utilities\BoundingBox.h</FileName>
     </TypeIdentifier>
   </Struct>
+  <Struct Name="TextureDesc" Collapsed="true">
+    <Position X="39.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAQAAAAQAAAAAAAkAAAAAAAAAAAAA=</HashCode>
+      <FileName>Renders\Resources\Texture2D.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="DXDesc" Collapsed="true">
+    <Position X="36.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAQAQAAAAAAAAABAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Systems\Window.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="UserInterfaces" Collapsed="true">
+    <Position X="41.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BgEAAgAAQCEIBAAAAAkAAAAAACAEAERAEAABAQAgAgA=</HashCode>
+      <FileName>Gaedrip\Managers\UserInterfaceManager.h</FileName>
+    </TypeIdentifier>
+  </Struct>
   <Typedef Name="Vector3" Collapsed="true">
-    <Position X="21" Y="9" Width="1.5" />
+    <Position X="41.5" Y="9" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Framework.h</FileName>
     </TypeIdentifier>
   </Typedef>
   <Typedef Name="Vector2" Collapsed="true">
-    <Position X="19.25" Y="9" Width="1.5" />
+    <Position X="39.75" Y="9" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Framework.h</FileName>
     </TypeIdentifier>
   </Typedef>
   <Typedef Name="Matrix" Collapsed="true">
-    <Position X="15.75" Y="9" Width="1.5" />
+    <Position X="36.25" Y="9" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Framework.h</FileName>
     </TypeIdentifier>
   </Typedef>
   <Typedef Name="Color" Collapsed="true">
-    <Position X="14" Y="9" Width="1.5" />
+    <Position X="34.5" Y="9" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Framework.h</FileName>
     </TypeIdentifier>
   </Typedef>
   <Typedef Name="uint" Collapsed="true">
-    <Position X="17.5" Y="9" Width="1.5" />
+    <Position X="38" Y="9" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Framework.h</FileName>
     </TypeIdentifier>
   </Typedef>
-  <Enum Name="__unnamed_enum_0450_1" Collapsed="true">
-    <Position X="14" Y="8" Width="1.5" />
+  <Enum Name="__unnamed_enum_045d_1" Collapsed="true">
+    <Position X="34.5" Y="8" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
       <FileName>Utilities\BoundingBox.h</FileName>

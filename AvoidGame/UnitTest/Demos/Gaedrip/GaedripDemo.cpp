@@ -1,6 +1,17 @@
 #include "stdafx.h"
 #include "GaedripDemo.h"
 
+#include "BasicObjects/Collider.h"
+#include "Gaedrip/CustomizedObjects/Entities/Player.h"
+#include "Gaedrip/Managers/GameManager.h"
+#include "Gaedrip/CustomizedObjects/Topography/Ground.h"
+#include "Gaedrip/CustomizedObjects/Topography/Platform.h"
+#include "Gaedrip/CustomizedObjects/DangerObjects/DangerBox.h"
+#include "Gaedrip/Backgrounds/Background.h"
+#include "Gaedrip/Managers/LevelManager.h"
+#include "Gaedrip/Managers/UserInterfaceManager.h"
+#include "Gaedrip/Items/HealPack.h"
+
 void GaedripDemo::Init()
 {
 
@@ -8,7 +19,7 @@ void GaedripDemo::Init()
 	healPack = new HealPack();
 	ground = new Ground();
 	background = new Background();
-	levelsManager = new LevelsManager(ground, player, healPack);
+	levelsManager = new LevelManager(ground, player, healPack);
 	dangerBoxs = levelsManager->getDangerBoxs();
 	userInterfaceManager = new UserInterfaceManager();
 	
@@ -31,14 +42,17 @@ void GaedripDemo::Destroy()
 	SAFE_DELETE(platform);
 }
 
+void GaedripDemo::PhysicsUpdate()
+{
+}
+
 void GaedripDemo::Update()
 {
-	// 메인화면이 아니라면
 
 	if (UserInterfaceManager::getisMain() == false)
 	{
 		
-		Excute();
+		Execute();
 		
 		background->Update();
 		player->Update();
@@ -89,7 +103,7 @@ void GaedripDemo::Render()
 	
 }
 
-void GaedripDemo::Excute()
+void GaedripDemo::Execute()
 {
 	player->CheckAndSetRuns();
 	player->MoveWidth();
@@ -102,7 +116,7 @@ void GaedripDemo::Excute()
 
 	player->Jump();
 
-	levelsManager->Excute();
+	levelsManager->Execute();
 }
 
 void GaedripDemo::CheckJump()
@@ -160,4 +174,5 @@ void GaedripDemo::GUI()
 {
 	player->GUI();
 }
+
 

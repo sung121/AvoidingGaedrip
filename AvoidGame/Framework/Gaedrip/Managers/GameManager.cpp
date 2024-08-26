@@ -1,6 +1,11 @@
 #include "Framework.h"
 #include "GameManager.h"
 
+#include "BasicObjects/GameObject.h"
+#include "Gaedrip/CustomizedObjects/Entities/Player.h"
+#include "UserInterfaceManager.h"
+#include "LevelManager.h"
+
 float GameManager::gravitySpd = 9.8f;
 
 void GameManager::ApplyGravity(GameObject* gameObject, float additionalSpd)

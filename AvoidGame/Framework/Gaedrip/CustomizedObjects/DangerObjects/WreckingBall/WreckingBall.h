@@ -1,7 +1,8 @@
 #pragma once
+
 #include "BasicObjects/GameObject.h"
-#include "BasicObjects/Collider.h"
-#include "Geomatries/TextureRect.h"
+class Collider;
+class TextureRect;
 
 class Wreckingball : GameObject
 {

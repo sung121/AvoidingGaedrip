@@ -1,6 +1,9 @@
 #include "Framework.h"
 #include "Player.h"
 
+#include "BasicObjects/Collider.h"
+#include "Geomatries/Rect.h"
+
 Player::Player()
 {
 	transform.SetPosition(WinCenterPos);
@@ -12,9 +15,6 @@ Player::Player()
 	transform.AddTransform(collider->getTransformPointer());
 
 	transform.SetSize( {30, 30, 0} );
-	
-	//rect->transform.SetSize(transform.GetSize());
-	//collider->transform.SetSize(transform.GetSize());
 	
 	jumpSpd = standardJumpSpd;
 
@@ -32,10 +32,6 @@ Player::~Player()
 
 void Player::Update()
 {
-	//cout << collider->transform.GetSize().y << endl;
-	//cout << transform.GetSize().y << endl;
-	//cout << rect->transform.GetSize().y << endl;
-	
 	rect->Update();
 	collider->transform.SetPosition(this->transform.GetPosition());
 	collider->Update();

@@ -240,7 +240,7 @@
     <ClCompile Include="Gaedrip\CustomizedObjects\Topography\Ground.cpp" />
     <ClCompile Include="Gaedrip\CustomizedObjects\Topography\Platform.cpp" />
     <ClCompile Include="Gaedrip\Levels\LevelReinhardt.cpp" />
-    <ClCompile Include="Gaedrip\Managers\LevelsManager.cpp" />
+    <ClCompile Include="Gaedrip\Managers\LevelManager.cpp" />
     <ClCompile Include="Gaedrip\CustomizedObjects\DangerObjects\Reinhardt\HammerLeft.cpp" />
     <ClCompile Include="Gaedrip\CustomizedObjects\DangerObjects\Reinhardt\HammerRight.cpp" />
     <ClCompile Include="Gaedrip\CustomizedObjects\DangerObjects\Reinhardt\Reinhardt.cpp" />
@@ -255,6 +255,7 @@
     <ClCompile Include="Renders\Shaders\PixelShader.cpp" />
     <ClCompile Include="Renders\Shaders\VertexShader.cpp" />
     <ClCompile Include="Renders\States.cpp" />
+    <ClCompile Include="Utilities\Rigidbody.cpp" />
     <ClCompile Include="Systems\Sound.cpp" />
     <ClCompile Include="Systems\Graphics.cpp" />
     <ClCompile Include="Systems\Keyboard.cpp" />
@@ -291,7 +292,7 @@
     <ClInclude Include="Interfaces\IObject.h" />
     <ClInclude Include="Gaedrip\CustomizedObjects\Topography\Platform.h" />
     <ClInclude Include="Gaedrip\Levels\LevelReinhardt.h" />
-    <ClInclude Include="Gaedrip\Managers\LevelsManager.h" />
+    <ClInclude Include="Gaedrip\Managers\LevelManager.h" />
     <ClInclude Include="Gaedrip\CustomizedObjects\DangerObjects\Reinhardt\Reinhardt.h" />
     <ClInclude Include="Gaedrip\Items\Items.h" />
     <ClInclude Include="Renders\IA\IndexBuffer.h" />
@@ -305,6 +306,7 @@
     <ClInclude Include="Renders\Shaders\PixelShader.h" />
     <ClInclude Include="Renders\Shaders\VertexShader.h" />
     <ClInclude Include="Renders\States.h" />
+    <ClInclude Include="Utilities\Rigidbody.h" />
     <ClInclude Include="Systems\Sound.h" />
     <ClInclude Include="Systems\Graphics.h" />
     <ClInclude Include="Systems\Keyboard.h" />

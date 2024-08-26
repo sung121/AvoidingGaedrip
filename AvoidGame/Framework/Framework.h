@@ -100,6 +100,12 @@ typedef UINT		uint;
 #include "Utilities/BoundingBox.h"
 #include "Utilities/String.h"
 #include "Utilities/Path.h"
+#include "Utilities/StandardTransform.h"
+#include "BasicObjects/Collider.h"
+
+#include "Geomatries/Rect.h"
+#include "Geomatries/TextureRect.h"
+#include "Geomatries/AnimationRect.h"
 
 
 

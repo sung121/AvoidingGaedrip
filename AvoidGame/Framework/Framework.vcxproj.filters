@@ -37,7 +37,7 @@
     <ClCompile Include="Gaedrip\Backgrounds\Background.cpp" />
     <ClCompile Include="Gaedrip\CustomizedObjects\DangerObjects\DangerBox.cpp" />
     <ClCompile Include="Gaedrip\Levels\LevelReinhardt.cpp" />
-    <ClCompile Include="Gaedrip\Managers\LevelsManager.cpp" />
+    <ClCompile Include="Gaedrip\Managers\LevelManager.cpp" />
     <ClCompile Include="Gaedrip\CustomizedObjects\DangerObjects\Reinhardt\HammerLeft.cpp" />
     <ClCompile Include="Gaedrip\CustomizedObjects\DangerObjects\Reinhardt\HammerRight.cpp" />
     <ClCompile Include="Gaedrip\CustomizedObjects\DangerObjects\Reinhardt\Reinhardt.cpp" />
@@ -45,6 +45,7 @@
     <ClCompile Include="Gaedrip\Managers\UserInterfaceManager.cpp" />
     <ClCompile Include="Gaedrip\Items\Items.cpp" />
     <ClCompile Include="Gaedrip\Items\HealPack.cpp" />
+    <ClCompile Include="Utilities\Rigidbody.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Systems\Graphics.h" />
@@ -88,7 +89,7 @@
     <ClInclude Include="Gaedrip\Backgrounds\Background.h" />
     <ClInclude Include="Gaedrip\CustomizedObjects\DangerObjects\DangerBox.h" />
     <ClInclude Include="Gaedrip\Levels\LevelReinhardt.h" />
-    <ClInclude Include="Gaedrip\Managers\LevelsManager.h" />
+    <ClInclude Include="Gaedrip\Managers\LevelManager.h" />
     <ClInclude Include="Gaedrip\CustomizedObjects\DangerObjects\Reinhardt\HammerLeft.h" />
     <ClInclude Include="Gaedrip\CustomizedObjects\DangerObjects\Reinhardt\HammerRight.h" />
     <ClInclude Include="Gaedrip\CustomizedObjects\DangerObjects\Reinhardt\Reinhardt.h" />
@@ -96,6 +97,7 @@
     <ClInclude Include="Gaedrip\Managers\UserInterfaceManager.h" />
     <ClInclude Include="Gaedrip\Items\Items.h" />
     <ClInclude Include="Gaedrip\Items\HealPack.h" />
+    <ClInclude Include="Utilities\Rigidbody.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />

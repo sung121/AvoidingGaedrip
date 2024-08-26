@@ -143,9 +143,10 @@ void Window::MainRender()
 {
 	if (ImGui::GetIO().WantCaptureMouse == false)
 	{
-	Mouse::Get()->Update();
-	Keyboard::Get()->Update();
+		Mouse::Get()->Update();
+		Keyboard::Get()->Update();
 	}
+
 	Time::Get()->Update();
 	Sounds::Get()->Update();
 	Gui::Get()->Update();

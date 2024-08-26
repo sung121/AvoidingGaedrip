@@ -1,7 +1,11 @@
 #pragma once
 #include "BasicObjects/GameObject.h"
-#include "Geomatries/TextureRect.h"
-#include "Gaedrip/CustomizedObjects/Entities/Player.h"
+
+class GameObject;
+class TextureRect;
+class Player;
+class Rect;
+
 
 struct UserInterfaces
 {
@@ -52,7 +56,7 @@ public:
 	void ManageMainScreen();
 	void SelectButtonMainScreen();
 	
-	void Excute();
+	void Execute();
 
 
 	void ChangeMoveButtonColor(Player* player);

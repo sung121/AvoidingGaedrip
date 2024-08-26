@@ -1,9 +1,12 @@
 #include "Framework.h"
 #include "UserInterfaceManager.h"
 
+#include "Geomatries/Rect.h"
+#include "Geomatries/TextureRect.h"
+#include "Gaedrip/CustomizedObjects/Entities/Player.h"
+
 bool UserInterfaceManager::isMain = false;
 bool UserInterfaceManager::reseted = false;
-
 UserInterfaceManager::UserInterfaceManager()
 {
 }
@@ -169,7 +172,7 @@ void UserInterfaceManager::SelectButtonMainScreen()
 	}
 }
 
-void UserInterfaceManager::Excute()
+void UserInterfaceManager::Execute()
 {
 }
 

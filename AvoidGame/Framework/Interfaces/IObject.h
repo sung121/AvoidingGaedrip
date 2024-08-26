@@ -5,6 +5,8 @@ class IObject
 public:
 	virtual void Init()			= 0; 
 	virtual void Destroy()		= 0;	// 소멸자 대체
+	
+	virtual void PhysicsUpdate()= 0;
 
 	virtual void Update()		= 0; 
 	

@@ -403,5 +403,5 @@ FodyWeavers.xsd
 Gaedrip/*
 
 # Gaedrip/_Libraries/ don't ignore _Libraries folder and files under the folder
-!Gaedrip/_Libraries/
-!Gaedrip/_Libraries/**
+!AvoidGame/_Libraries/
+!AvoidGame/_Libraries/**

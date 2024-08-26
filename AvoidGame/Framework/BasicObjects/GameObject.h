@@ -1,5 +1,5 @@
 #pragma once
-#include "Utilities/StandardTransform.h"
+class StandardTransform;
 
 class GameObject
 {

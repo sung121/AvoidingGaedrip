@@ -1,7 +1,9 @@
 #pragma once
 #include "BasicObjects/GameObject.h"
-#include "BasicObjects/Collider.h"
-#include "Geomatries/Rect.h"
+
+class Collider;
+class Rect;
+class StandardTransform;
 
 class DangerBox : GameObject
 {
@@ -24,14 +26,10 @@ public:
 	bool getMovesFirst() { return movesFirst; }
 	void setMovesFirst(bool movesFirst) { this->movesFirst = movesFirst; }
 
-	
-
 public:
 	StandardTransform& transform = GameObject::transform;
 	
 private:
-
-	
 
 	Rect* rect = nullptr;
 	Collider* collider = nullptr;

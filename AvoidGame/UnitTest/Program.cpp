@@ -3,10 +3,6 @@
 #include "Systems/Window.h"
 #include "Demos/Test/TestDemo.h"
 #include "Demos/Gaedrip/GaedripDemo.h"
-#include "AnimDemo.h"
-
-
-
 
 void Program::Init()
 {
@@ -66,8 +62,32 @@ void Program::Destroy()
 	}
 }
 
+void Program::PhysicsUpdate()
+{
+	for (IObject* obj : objs)
+	{
+		obj->PhysicsUpdate();
+	}
+}
+
 void Program::Update()
 {
+	physicsCycle = 0;
+	FXUPdatePerSec = 0;
+	frameRate = 0;
+	time = 0;
+
+	frameRate += 1;
+
+	physicsCycle += Time::Delta();
+	time += Time::Delta();
+
+	while (physicsCycle >= 0.02)
+	{
+		physicsCycle -= 0.02;
+		FXUPdatePerSec++;
+		PhysicsUpdate();
+	}
 	for (IObject* obj : objs)
 		obj->Update();
 }

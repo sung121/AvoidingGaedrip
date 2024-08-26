@@ -1,5 +1,6 @@
 #pragma once
-#include "Utilities/Transform.h"
+
+class Transform;
 
 class TextureRect
 {

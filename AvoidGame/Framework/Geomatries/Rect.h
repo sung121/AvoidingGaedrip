@@ -1,7 +1,5 @@
 #pragma once
-
-#include "Framework.h"
-#include "Utilities/Transform.h"
+class Transform;
 
 class Rect
 {
@@ -18,7 +16,7 @@ public:
 	void GUI();
 	void GUI(const char* name);
 
-	void UpdateColor(); 
+	void UpdateColor();
 	string MakeLable(string preFix);
 
 	void UpdateWorld();

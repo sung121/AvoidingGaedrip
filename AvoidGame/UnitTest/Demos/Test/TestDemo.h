@@ -1,8 +1,9 @@
 #pragma once
-#include "Geomatries/Rect.h"
-#include "Gaedrip/CustomizedObjects/Entities/Player.h"
-#include "Gaedrip/CustomizedObjects/Topography/Ground.h"
-#include "Gaedrip/Managers/LevelsManager.h"
+class Rect;
+class Player;
+class Ground;
+class LevelManager;
+class Wreckingball;
 
 class TestDemo : public IObject
 {

@@ -1,6 +1,7 @@
 #pragma once
 #include "Geomatries/Rect.h"
-#include "Utilities/Transform.h"
+
+class Transform;
 
 class Collider : public Rect
 {

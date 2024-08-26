@@ -1,6 +1,9 @@
 #include "Framework.h"
 #include "Collider.h"
 
+#include "Geomatries/Rect.h"
+#include "Utilities/Transform.h"
+
 Collider::Collider(Vector3 position, Vector3 size, float rotation) 
 	: Rect(position, size, rotation)
 {
