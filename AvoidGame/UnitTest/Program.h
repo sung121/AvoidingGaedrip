@@ -1,5 +1,7 @@
 #pragma once
 
+class SceneBase;
+
 class Program : public IObject
 {
 	virtual void Init() override;
@@ -11,12 +13,12 @@ class Program : public IObject
 	virtual void GUI() override;
 
 private:
-	void Push(IObject* obj);
+	void Push(SceneBase* obj);
 
 	VPBuffer* vpb = nullptr;
 	Matrix view, proj;
 
-	vector<IObject*> objs;
+	vector<SceneBase*> objs;
 
 	float physicsCycle = 0;
 	float FXUPdatePerSec = 0;

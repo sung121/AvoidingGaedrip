@@ -4,7 +4,7 @@
 #pragma comment(linker, "/entry:WinMainCRTStartup /subsystem:console")
 #endif
 
-//¹Ì¸® ÄÄÆÄÀÏµÈ Çì´õ.
+//ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½ ï¿½ï¿½ï¿½.
 //pch pre compiled header
 
 #include <iostream>
@@ -100,12 +100,21 @@ typedef UINT		uint;
 #include "Utilities/BoundingBox.h"
 #include "Utilities/String.h"
 #include "Utilities/Path.h"
-#include "Utilities/StandardTransform.h"
-#include "BasicObjects/Collider.h"
+<<<<<<< Updated upstream:Gaedrip-ì¤‘ê°„ì™„ì„±ë³¸/Framework/Framework.h
+=======
+
+/////////////////////////////////////////////////////
+
+#include "Components/StandardTransform.h"
 
 #include "Geomatries/Rect.h"
 #include "Geomatries/TextureRect.h"
 #include "Geomatries/AnimationRect.h"
+>>>>>>> Stashed changes:AvoidGame/Framework/Framework.h
+
+#include "BasicObjects/Collider.h"
+
+
 
 
 

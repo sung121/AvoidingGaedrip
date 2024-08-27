@@ -1,12 +1,16 @@
 #pragma once
 
-class Transform;
-
-class TextureRect
+class TextureRect : public Component
 {
 public:
-	TextureRect(Vector3 position, Vector3 size, float rotation, wstring path);
-	TextureRect(const Transform& transform, wstring path);
+	virtual void Start();
+	virtual void Destroy();
+	virtual void PhysicsUpdate();
+	virtual void OnCollisionEnter();
+	virtual void Update();
+public:
+	TextureRect(GameObject& gameObject, Vector3 position, Vector3 size, float rotation, wstring path);
+	TextureRect(GameObject& gameObject, const Transform& transform, wstring path);
 
 	~TextureRect();
 	void MakeTextureRect();
@@ -16,7 +20,6 @@ public:
 
 	void SetPath(wstring path);
 
-	void Update();
 	void UpdateWorld();
 
 	void MapVertexBuffer();
@@ -29,9 +32,6 @@ public:
 
 	Transform* getTransformPointer() { return &transform; }
 	Transform& getTransform() { return transform; }
-
-public:
-	Transform transform;
 
 protected:
 
@@ -66,6 +66,8 @@ protected:
 	Vector3 verticesPosition[4];
 
 	D3D11_MAPPED_SUBRESOURCE subResource;
+
+
 
 
 };

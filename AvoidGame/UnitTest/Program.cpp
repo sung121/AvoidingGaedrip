@@ -3,6 +3,8 @@
 #include "Systems/Window.h"
 #include "Demos/Test/TestDemo.h"
 #include "Demos/Gaedrip/GaedripDemo.h"
+#include "SceneBase.h"
+#include "Components/Rigidbody.h"
 
 void Program::Init()
 {
@@ -17,9 +19,9 @@ void Program::Init()
 			D3DXMatrixLookAtLH
 			(
 				&view,
-				&Vector3(0, 0, 0),	// Ä«¸Þ¶ó À§Ä¡
-				&Vector3(0, 0, 1),	// Ä«¸Þ¶ó°¡ º¸°íÀÖ´Â ¹æÇâ (Àü¹æ)
-				&Vector3(0, 1, 0)	// Ä«¸Þ¶ó À§ÂÊ ¹æÇâ
+				&Vector3(0, 0, 0),	// Ä«ï¿½Þ¶ï¿½ ï¿½ï¿½Ä¡
+				&Vector3(0, 0, 1),	// Ä«ï¿½Þ¶ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ (ï¿½ï¿½ï¿½ï¿½)
+				&Vector3(0, 1, 0)	// Ä«ï¿½Þ¶ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 			);
 
 			vpb->SetView(view);
@@ -30,12 +32,12 @@ void Program::Init()
 			D3DXMatrixOrthoOffCenterLH
 			(
 				&proj,
-				0.0f,					// ¿ÞÂÊ
-				(float)WinMaxWidth,		// ¿À¸¥ÂÊ
-				0.0f,					// ¾Æ·¡
-				(float)WinMaxHeight,	// À§
-				0,						// ´Ï¾î	(±íÀÌ ÃÖ¼Ò)
-				1						// ÆÄ	(±íÀÌ ÃÖ´ë)
+				0.0f,					// ï¿½ï¿½ï¿½ï¿½
+				(float)WinMaxWidth,		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+				0.0f,					// ï¿½Æ·ï¿½
+				(float)WinMaxHeight,	// ï¿½ï¿½
+				0,						// ï¿½Ï¾ï¿½	(ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¼ï¿½)
+				1						// ï¿½ï¿½	(ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½)
 			);
 
 			vpb->SetProjection(proj);
@@ -44,7 +46,7 @@ void Program::Init()
 
 	//Push(new CupheadDemo);
 
-	Push(new GaedripDemo);
+	Push(new SceneBase);
 	
 	//Push(new TestDemo);
 	
@@ -55,7 +57,7 @@ void Program::Destroy()
 {
 	SAFE_DELETE(vpb);
 
-	for (IObject* obj : objs)
+	for (SceneBase* obj : objs)
 	{
 		obj->Destroy();
 		SAFE_DELETE(obj);
@@ -67,6 +69,17 @@ void Program::PhysicsUpdate()
 	for (IObject* obj : objs)
 	{
 		obj->PhysicsUpdate();
+	}
+}
+
+void Program::PhysicsUpdate()
+{
+	for (SceneBase* obj : objs)
+	{
+		for (size_t i = 0; i < obj->getRigidbodies().size(); i++)
+		{
+			obj->getRigidbodies()[i].gameObject;
+		}
 	}
 }
 
@@ -102,19 +115,19 @@ void Program::Render()
 
 void Program::PostRender()
 {
-	for (IObject* obj : objs)
+	for (SceneBase* obj : objs)
 		obj->PostRender();
 }
 
 void Program::GUI()
 {
-	for (IObject* obj : objs)
+	for (SceneBase* obj : objs)
 	{
 		obj->GUI();
 	}
 }
 
-void Program::Push(IObject* obj)
+void Program::Push(SceneBase* obj)
 {
 	objs.push_back(obj);
 	obj->Init();

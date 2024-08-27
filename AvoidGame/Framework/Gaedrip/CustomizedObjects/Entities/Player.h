@@ -1,16 +1,13 @@
 #pragma once
 #include "BasicObjects/GameObject.h"
 
-class Collider;
-class Rect;
-
 class Player : public GameObject
 {
 public:
 	Player();
 	~Player();
 
-	// GameObjectÀ»(¸¦) ÅëÇØ »ó¼ÓµÊ
+	// GameObjectï¿½ï¿½(ï¿½ï¿½) ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Óµï¿½
 	void Update() override;
 	void Render() override;
 	

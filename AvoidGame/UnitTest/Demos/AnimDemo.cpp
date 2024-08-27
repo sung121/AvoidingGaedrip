@@ -3,7 +3,7 @@
 
 void AnimDemo::Init()
 {
-	ar = new AnimationRect(Transform());
+	//ar = new AnimationRect(Transform());
 
 	Sounds::Get()->AddSound("BGM",
 		SoundPath + L"bgm.wav");
@@ -15,12 +15,12 @@ void AnimDemo::Init()
 
 void AnimDemo::Destroy()
 {
-	SAFE_DELETE(ar);
+	//SAFE_DELETE(ar);
 }
 
 void AnimDemo::Update()
 {
-	ar->Update();
+	//ar->Update();
 
 	if (Mouse::Get()->Down(0x000000))
 	{
@@ -30,7 +30,7 @@ void AnimDemo::Update()
 
 void AnimDemo::Render()
 {
-	ar ->Render();
+	//ar ->Render();
 }
 
 void AnimDemo::PostRender()
@@ -39,5 +39,5 @@ void AnimDemo::PostRender()
 
 void AnimDemo::GUI()
 {
-	ar->GUI();
+	//ar->GUI();
 }

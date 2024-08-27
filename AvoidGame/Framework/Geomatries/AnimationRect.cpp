@@ -1,14 +1,14 @@
 ﻿#include "Framework.h"
 #include "AnimationRect.h"
 
-AnimationRect::AnimationRect(Vector3 position, Vector3 size)
-    : TextureRect(position, size, 0.0f, TexturePath + L"SolidBlack.png")
+AnimationRect::AnimationRect(GameObject& gameObject, Vector3 position, Vector3 size)
+    : TextureRect(gameObject, position, size, 0.0f, TexturePath + L"SolidBlack.png")
 {
 	MakeAnimator();
 }
 
-AnimationRect::AnimationRect(const Transform& transform)
-	:TextureRect(transform, TexturePath + L"SolidBlack.png")
+AnimationRect::AnimationRect(GameObject& gameObject, const Transform& transform)
+	:TextureRect(gameObject, transform, TexturePath + L"SolidBlack.png")
 {
 	MakeAnimator();
 }

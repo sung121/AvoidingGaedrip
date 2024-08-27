@@ -4,10 +4,15 @@
 #include "BasicObjects/Collider.h"
 #include "Geomatries/Rect.h"
 
+#include "BasicObjects/Collider.h"
+
 Player::Player()
 {
-	transform.SetPosition(WinCenterPos);
-	rect = new Rect(WinCenterPos, { 500, 500, 0 }, 0);
+	rect = &AddComponent<Rect>();
+	rect->transform.SetPosition(WinCenterPos);
+	rect->transform.SetSize({500, 500, 0});
+	//transform.SetPosition(WinCenterPos);
+	//rect = new Rect(WinCenterPos, { 500, 500, 0 }, 0);
 	collider = new Collider(WinCenterPos, { 500, 500, 0 }, 0);
 
 
@@ -62,8 +67,8 @@ void Player::Reset()
 {
 	transform.SetPosition(WinCenterPos);
 
-	cout << "¸®¼Â½Ã collider: " << collider->transform.GetPosition().y << endl;
-	cout << "¸®¼Â½Ã gameobject: " << transform.GetPosition().y << endl;
+	cout << "ï¿½ï¿½ï¿½Â½ï¿½ collider: " << collider->transform.GetPosition().y << endl;
+	cout << "ï¿½ï¿½ï¿½Â½ï¿½ gameobject: " << transform.GetPosition().y << endl;
 
 	jumps = false;
 
@@ -142,7 +147,7 @@ void Player::CheckAndSetRuns()
 {
 	if (Keyboard::Get()->Press(VK_SHIFT) && isExhausted == false)
 	{
-		cout << "³²Àº ¿¡³ÊÁö: " << energy << endl;
+		cout << "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: " << energy << endl;
 		if (energy < 0)
 			isExhausted = true;
 		else
@@ -169,7 +174,7 @@ void Player::CheckAndSetRuns()
 
 void Player::Jump()
 {
-	// Á¡ÇÁ ½ÃÀÛ
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	if ((Keyboard::Get()->Down(VK_UP)) && jumpsTwice == false && jumpsFirst == true)
 	{
 		jumps = true;
@@ -188,7 +193,7 @@ void Player::Jump()
 		applysGravity = false;
 		reachsAtJumpLimit = false;
 		jumpsFirst = true;
-	}	// Á¡ÇÁ ³¡³ª°í ¶³¾îÁö´ÂÁß
+	}	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	else if (reachsAtJumpLimit == true && reachsAtGround == false)
 	{
 		jumpTime = 0;
@@ -202,7 +207,7 @@ void Player::Jump()
 	{
 		jumpTime += Time::Delta();
 
-		//±âÁØ½Ã°£º¸´Ù ÀûÀ»½Ã yÃà°¨¼Ó¿îµ¿
+		//ï¿½ï¿½ï¿½Ø½Ã°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ yï¿½à°¨ï¿½Ó¿îµ¿
 		if (jumpTime <= standardJumpTime)
 		{
 			float playerPosY = transform.GetPosition().y;
@@ -235,13 +240,13 @@ void Player::AdjustImmortal()
 {
 	if (!isImmortal)
 		return;
-	// ¹«ÀûÀÌ¶ó¸é
+	// ï¿½ï¿½ï¿½ï¿½ï¿½Ì¶ï¿½ï¿½
 	immortalTime -= Time::Delta();
 
 	if (immortalTime > 0)
 		return;
 
-	// ¹«Àû½Ã°£ÀÌ 0 ÀÌÇÏ¶ó¸é
+	// ï¿½ï¿½ï¿½ï¿½ï¿½Ã°ï¿½ï¿½ï¿½ 0 ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½
 	rect->SetColor(Color(0, 0, 100, 0));
 	isImmortal = false;
 

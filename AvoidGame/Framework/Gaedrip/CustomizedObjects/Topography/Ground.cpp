@@ -4,13 +4,12 @@
 Ground::Ground()
 {
 	transform.SetSize(Vector3( 1094, 217 * 0.75f, 0 ) * 2);
-
-	textureRect = new TextureRect(transform, PathGaedrip + L"PlatformBig.png");
+	AddComponent<TextureRect>();
+	//textureRect = new TextureRect(transform, PathGaedrip + L"PlatformBig.png");
 	collider = new Collider(transform);
 	
 	transform.AddTransform(textureRect->getTransformPointer());
 	transform.AddTransform(collider->getTransformPointer());
-
 
 	collider->transform = this->transform;
 	textureRect->transform = this->transform;

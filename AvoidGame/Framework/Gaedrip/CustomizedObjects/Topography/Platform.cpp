@@ -8,7 +8,7 @@ Platform::Platform()
 	transform.SetSize({basicSize});
 
 	collider = new Collider(transform);
-	textureRect = new TextureRect(transform, PathGaedrip + L"PlatformSmall.png");
+	//textureRect = new TextureRect(transform, PathGaedrip + L"PlatformSmall.png");
 
 }
 

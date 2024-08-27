@@ -12,34 +12,34 @@ struct UserInterfaces
 	UserInterfaces();
 	~UserInterfaces();
 
-	void Reset();
+	//void Reset();
 
-	TextureRect* gear = nullptr;
-	TextureRect* buttonStart = nullptr;
-	TextureRect* buttonStart2 = nullptr;
-	TextureRect* buttonSetting = nullptr;
-	TextureRect* title = nullptr;
+	//TextureRect* gear = nullptr;
+	//TextureRect* buttonStart = nullptr;
+	//TextureRect* buttonStart2 = nullptr;
+	//TextureRect* buttonSetting = nullptr;
+	//TextureRect* title = nullptr;
 
-	TextureRect* keyRightOff = nullptr;
-	TextureRect* keyRightOn = nullptr;
-	TextureRect* keyLeftOff = nullptr;
-	TextureRect* keyLeftOn = nullptr;
-	TextureRect* keyJump = nullptr;
+	//TextureRect* keyRightOff = nullptr;
+	//TextureRect* keyRightOn = nullptr;
+	//TextureRect* keyLeftOff = nullptr;
+	//TextureRect* keyLeftOn = nullptr;
+	//TextureRect* keyJump = nullptr;
 
-	vector<Rect*> lifeImages;
-	int lifeCount = 5;
+	//vector<Rect*> lifeImages;
+	//int lifeCount = 5;
 
-	vector<TextureRect*> scoreImages;
-	Vector3 scoreStandardPos = { 500, 500, 0 };
+	//vector<TextureRect*> scoreImages;
+	//Vector3 scoreStandardPos = { 500, 500, 0 };
 
-	Transform lifeTransform = Transform(Vector3(1100, 650, 0), Vector3(20, 40, 1), 0.00f);
-	Vector3 lifePosition = lifeTransform.GetPosition();
-	Vector3 lifeSize = lifeTransform.GetSize();
+	//Transform lifeTransform = Transform(Vector3(1100, 650, 0), Vector3(20, 40, 1), 0.00f);
+	//Vector3 lifePosition = lifeTransform.GetPosition();
+	//Vector3 lifeSize = lifeTransform.GetSize();
 
 
-	
-	Rect* blinder = nullptr;
-	Rect* energyBar = nullptr;
+	//
+	//Rect* blinder = nullptr;
+	//Rect* energyBar = nullptr;
 };
 
 class UserInterfaceManager : public GameObject

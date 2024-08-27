@@ -28,8 +28,8 @@
     <ClCompile Include="BasicObjects\Collider.cpp" />
     <ClCompile Include="Gaedrip\CustomizedObjects\Entities\Player.cpp" />
     <ClCompile Include="Gaedrip\Managers\GameManager.cpp" />
-    <ClCompile Include="Utilities\StandardTransform.cpp" />
-    <ClCompile Include="Utilities\Transform.cpp" />
+    <ClCompile Include="Components\StandardTransform.cpp" />
+    <ClCompile Include="Components\Transform.cpp" />
     <ClCompile Include="BasicObjects\GameObject.cpp" />
     <ClCompile Include="Gaedrip\CustomizedObjects\Topography\Ground.cpp" />
     <ClCompile Include="Systems\Sound.cpp" />
@@ -45,7 +45,11 @@
     <ClCompile Include="Gaedrip\Managers\UserInterfaceManager.cpp" />
     <ClCompile Include="Gaedrip\Items\Items.cpp" />
     <ClCompile Include="Gaedrip\Items\HealPack.cpp" />
-    <ClCompile Include="Utilities\Rigidbody.cpp" />
+<<<<<<< Updated upstream:Gaedrip-중간완성본/Framework/Framework.vcxproj.filters
+=======
+    <ClCompile Include="Components\Rigidbody.cpp" />
+    <ClCompile Include="Components\Component.cpp" />
+>>>>>>> Stashed changes:AvoidGame/Framework/Framework.vcxproj.filters
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Systems\Graphics.h" />
@@ -80,8 +84,8 @@
     <ClInclude Include="BasicObjects\Collider.h" />
     <ClInclude Include="Gaedrip\CustomizedObjects\Entities\Player.h" />
     <ClInclude Include="Gaedrip\Managers\GameManager.h" />
-    <ClInclude Include="Utilities\StandardTransform.h" />
-    <ClInclude Include="Utilities\Transform.h" />
+    <ClInclude Include="Components\StandardTransform.h" />
+    <ClInclude Include="Components\Transform.h" />
     <ClInclude Include="BasicObjects\GameObject.h" />
     <ClInclude Include="Gaedrip\CustomizedObjects\Topography\Ground.h" />
     <ClInclude Include="Systems\Sound.h" />
@@ -97,7 +101,11 @@
     <ClInclude Include="Gaedrip\Managers\UserInterfaceManager.h" />
     <ClInclude Include="Gaedrip\Items\Items.h" />
     <ClInclude Include="Gaedrip\Items\HealPack.h" />
-    <ClInclude Include="Utilities\Rigidbody.h" />
+<<<<<<< Updated upstream:Gaedrip-중간완성본/Framework/Framework.vcxproj.filters
+=======
+    <ClInclude Include="Components\Rigidbody.h" />
+    <ClInclude Include="Components\Component.h" />
+>>>>>>> Stashed changes:AvoidGame/Framework/Framework.vcxproj.filters
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />

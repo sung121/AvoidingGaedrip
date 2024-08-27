@@ -5,6 +5,9 @@
 #include "Geomatries/Rect.h"
 #include "Utilities/StandardTransform.h"
 
+#include "BasicObjects/Collider.h"
+#include "Geomatries/Rect.h"
+
 DangerBox::DangerBox()
 {
 	transform.SetSize({ 70, 150, 0 });

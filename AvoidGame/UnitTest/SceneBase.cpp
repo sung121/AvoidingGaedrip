@@ -1,6 +1,9 @@
 #include "stdafx.h"
 #include "SceneBase.h"
 
+#include "Components/Component.h"
+#include "Components/Rigidbody.h"
+
 void SceneBase::Init()
 {
 }

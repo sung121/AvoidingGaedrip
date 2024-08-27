@@ -1,6 +1,7 @@
 #pragma once
 
 class GameObject;
+class Rigidbody;
 
 class SceneBase : public IObject
 {
@@ -14,8 +15,11 @@ public:
 	void GUI() override;
 
 public:
-	vector<GameObject> gameObjects;
-	//vector<>
+	vector<GameObject> getGameObjects() { return gameObjects; };
+	vector<Rigidbody> getRigidbodies() { return rigidBodies; };
 
+private:
+	vector<GameObject> gameObjects;
+	vector<Rigidbody> rigidBodies;
 };
 

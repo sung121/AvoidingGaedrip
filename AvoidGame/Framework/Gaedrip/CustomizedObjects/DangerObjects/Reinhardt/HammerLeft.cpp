@@ -3,9 +3,10 @@
 
 HammerLeft::HammerLeft()
 {
+	AddComponent<TextureRect>();
 	transform.SetSize(Vector3(397 * 2, 133 * 2, 1));
 	
-	textureRect = new TextureRect(transform, PathGaedrip + L"HamaLeft.png");
+	//textureRect = new TextureRect(transform, PathGaedrip + L"HamaLeft.png");
 	collider = new Collider(transform);
 	
 	
