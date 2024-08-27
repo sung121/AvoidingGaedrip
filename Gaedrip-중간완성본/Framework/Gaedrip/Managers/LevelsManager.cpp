@@ -23,11 +23,11 @@ LevelsManager::LevelsManager(Ground* ground, Player* player, HealPack* healPack)
 
 	wreckingball->transform.SetPosition(WinCenterPos);
 
-	skull = new TextureRect(Transform({2000, 2000, 0}, {40, 40, 0}, 0), PathGaedrip + L"mccreeUltimateBlueMagenta.png");
-	circle = new TextureRect(Vector3(2000, 2000, 0), Vector3(500, 500, 0), 0, PathGaedrip + L"mccreeUltimateCircleMagenta2.png");
+	//skull = new TextureRect(Transform({2000, 2000, 0}, {40, 40, 0}, 0), PathGaedrip + L"mccreeUltimateBlueMagenta.png");
+	//circle = new TextureRect(Vector3(2000, 2000, 0), Vector3(500, 500, 0), 0, PathGaedrip + L"mccreeUltimateCircleMagenta2.png");
 	
-	wall = new Rect(Vector3(2000, 2000, 0), Vector3(200, 400, 0), 0);
-	wall->SetColor(Color(0, 100, 0, 0));
+	//wall = new Rect(Vector3(2000, 2000, 0), Vector3(200, 400, 0), 0);
+	//wall->SetColor(Color(0, 100, 0, 0));
 
 	
 	progressTime = 0;
@@ -548,7 +548,7 @@ void LevelsManager::ExcuteWreckingBall()
 	}
 	if (progressTime == 11)
 	{
-		dangerBoxs[0]->transform = Transform({WinCenterPos.x, -100, 0}, {{WinMaxWidth, 300, 0}}, 0);
+		//dangerBoxs[0]->transform = Transform({WinCenterPos.x, -100, 0}, {{WinMaxWidth, 300, 0}}, 0);
 
 	}
 	

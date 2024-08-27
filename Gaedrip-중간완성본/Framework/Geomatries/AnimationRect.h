@@ -7,8 +7,8 @@
 class AnimationRect : public TextureRect
 {
 public:
-    AnimationRect(Vector3 position, Vector3 size);
-	AnimationRect(const Transform& transform);
+    AnimationRect(GameObject& gameObject, Vector3 position, Vector3 size);
+	AnimationRect(GameObject& gameObject, const Transform& transform);
 
     ~AnimationRect();
 

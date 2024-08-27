@@ -100,6 +100,21 @@ typedef UINT		uint;
 #include "Utilities/BoundingBox.h"
 #include "Utilities/String.h"
 #include "Utilities/Path.h"
+<<<<<<< Updated upstream:Gaedrip-중간완성본/Framework/Framework.h
+=======
+
+/////////////////////////////////////////////////////
+
+#include "Components/StandardTransform.h"
+
+#include "Geomatries/Rect.h"
+#include "Geomatries/TextureRect.h"
+#include "Geomatries/AnimationRect.h"
+>>>>>>> Stashed changes:AvoidGame/Framework/Framework.h
+
+#include "BasicObjects/Collider.h"
+
+
 
 
 

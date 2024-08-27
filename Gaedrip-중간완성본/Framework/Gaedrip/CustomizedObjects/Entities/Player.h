@@ -1,6 +1,10 @@
 #pragma once
 #include "BasicObjects/GameObject.h"
+<<<<<<< Updated upstream:Gaedrip-중간완성본/Framework/Gaedrip/CustomizedObjects/Entities/Player.h
 #include "BasicObjects/Collider.h"
+=======
+
+>>>>>>> Stashed changes:AvoidGame/Framework/Gaedrip/CustomizedObjects/Entities/Player.h
 
 class Player : public GameObject
 {

@@ -4,7 +4,8 @@
 Background::Background()
 {
 	transform.AddTransform(rect->getTransformPointer());
-	rect = new Rect(transform);
+	AddComponent<Rect>();
+	//rect = new Rect(transform);
 	rect->SetColor(Color(0, 0, 0, 0));
 
 }

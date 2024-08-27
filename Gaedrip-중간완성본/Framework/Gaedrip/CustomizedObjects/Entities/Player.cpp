@@ -1,10 +1,18 @@
 #include "Framework.h"
 #include "Player.h"
 
+<<<<<<< Updated upstream:Gaedrip-중간완성본/Framework/Gaedrip/CustomizedObjects/Entities/Player.cpp
+=======
+#include "BasicObjects/Collider.h"
+
+>>>>>>> Stashed changes:AvoidGame/Framework/Gaedrip/CustomizedObjects/Entities/Player.cpp
 Player::Player()
 {
-	transform.SetPosition(WinCenterPos);
-	rect = new Rect(WinCenterPos, { 500, 500, 0 }, 0);
+	rect = &AddComponent<Rect>();
+	rect->transform.SetPosition(WinCenterPos);
+	rect->transform.SetSize({500, 500, 0});
+	//transform.SetPosition(WinCenterPos);
+	//rect = new Rect(WinCenterPos, { 500, 500, 0 }, 0);
 	collider = new Collider(WinCenterPos, { 500, 500, 0 }, 0);
 
 

@@ -5,10 +5,15 @@
 
 #include "Demos/Test/TestDemo.h"
 #include "Demos/Gaedrip/GaedripDemo.h"
+<<<<<<< Updated upstream:Gaedrip-중간완성본/UnitTest/Program.cpp
 #include "AnimDemo.h"
 
 
 
+=======
+#include "SceneBase.h"
+#include "Components/Rigidbody.h"
+>>>>>>> Stashed changes:AvoidGame/UnitTest/Program.cpp
 
 void Program::Init()
 {
@@ -50,7 +55,7 @@ void Program::Init()
 
 	//Push(new CupheadDemo);
 
-	Push(new GaedripDemo);
+	Push(new SceneBase);
 	
 	//Push(new TestDemo);
 	
@@ -61,13 +66,27 @@ void Program::Destroy()
 {
 	SAFE_DELETE(vpb);
 
-	for (IObject* obj : objs)
+	for (SceneBase* obj : objs)
 	{
 		obj->Destroy();
 		SAFE_DELETE(obj);
 	}
 }
 
+<<<<<<< Updated upstream:Gaedrip-중간완성본/UnitTest/Program.cpp
+=======
+void Program::PhysicsUpdate()
+{
+	for (SceneBase* obj : objs)
+	{
+		for (size_t i = 0; i < obj->getRigidbodies().size(); i++)
+		{
+			obj->getRigidbodies()[i].gameObject;
+		}
+	}
+}
+
+>>>>>>> Stashed changes:AvoidGame/UnitTest/Program.cpp
 void Program::Update()
 {
 	for (IObject* obj : objs)
@@ -84,19 +103,19 @@ void Program::Render()
 
 void Program::PostRender()
 {
-	for (IObject* obj : objs)
+	for (SceneBase* obj : objs)
 		obj->PostRender();
 }
 
 void Program::GUI()
 {
-	for (IObject* obj : objs)
+	for (SceneBase* obj : objs)
 	{
 		obj->GUI();
 	}
 }
 
-void Program::Push(IObject* obj)
+void Program::Push(SceneBase* obj)
 {
 	objs.push_back(obj);
 	obj->Init();

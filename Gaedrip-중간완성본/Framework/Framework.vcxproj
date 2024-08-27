@@ -227,6 +227,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Components\Component.cpp" />
     <ClCompile Include="Gaedrip\Backgrounds\Background.cpp" />
     <ClCompile Include="BasicObjects\Collider.cpp" />
     <ClCompile Include="Gaedrip\CustomizedObjects\DangerObjects\DangerBox.cpp" />
@@ -255,6 +256,10 @@
     <ClCompile Include="Renders\Shaders\PixelShader.cpp" />
     <ClCompile Include="Renders\Shaders\VertexShader.cpp" />
     <ClCompile Include="Renders\States.cpp" />
+<<<<<<< Updated upstream:Gaedrip-중간완성본/Framework/Framework.vcxproj
+=======
+    <ClCompile Include="Components\Rigidbody.cpp" />
+>>>>>>> Stashed changes:AvoidGame/Framework/Framework.vcxproj
     <ClCompile Include="Systems\Sound.cpp" />
     <ClCompile Include="Systems\Graphics.cpp" />
     <ClCompile Include="Systems\Keyboard.cpp" />
@@ -267,12 +272,13 @@
     <ClCompile Include="Utilities\DirectHelper.cpp" />
     <ClCompile Include="Utilities\Gui.cpp" />
     <ClCompile Include="Utilities\Path.cpp" />
-    <ClCompile Include="Utilities\StandardTransform.cpp" />
+    <ClCompile Include="Components\StandardTransform.cpp" />
     <ClCompile Include="Utilities\String.cpp" />
-    <ClCompile Include="Utilities\Transform.cpp" />
+    <ClCompile Include="Components\Transform.cpp" />
     <ClCompile Include="Gaedrip\CustomizedObjects\DangerObjects\WreckingBall\WreckingBall.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Components\Component.h" />
     <ClInclude Include="Gaedrip\Backgrounds\Background.h" />
     <ClInclude Include="BasicObjects\Collider.h" />
     <ClInclude Include="Gaedrip\CustomizedObjects\DangerObjects\DangerBox.h" />
@@ -305,6 +311,10 @@
     <ClInclude Include="Renders\Shaders\PixelShader.h" />
     <ClInclude Include="Renders\Shaders\VertexShader.h" />
     <ClInclude Include="Renders\States.h" />
+<<<<<<< Updated upstream:Gaedrip-중간완성본/Framework/Framework.vcxproj
+=======
+    <ClInclude Include="Components\Rigidbody.h" />
+>>>>>>> Stashed changes:AvoidGame/Framework/Framework.vcxproj
     <ClInclude Include="Systems\Sound.h" />
     <ClInclude Include="Systems\Graphics.h" />
     <ClInclude Include="Systems\Keyboard.h" />
@@ -318,9 +328,9 @@
     <ClInclude Include="Utilities\Gui.h" />
     <ClInclude Include="Utilities\Path.h" />
     <ClInclude Include="Utilities\SingletonBase.h" />
-    <ClInclude Include="Utilities\StandardTransform.h" />
+    <ClInclude Include="Components\StandardTransform.h" />
     <ClInclude Include="Utilities\String.h" />
-    <ClInclude Include="Utilities\Transform.h" />
+    <ClInclude Include="Components\Transform.h" />
     <ClInclude Include="Gaedrip\CustomizedObjects\DangerObjects\WreckingBall\WreckingBall.h" />
   </ItemGroup>
   <ItemGroup>

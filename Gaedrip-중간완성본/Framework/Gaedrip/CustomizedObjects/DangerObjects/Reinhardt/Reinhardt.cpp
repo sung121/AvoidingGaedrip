@@ -4,7 +4,7 @@
 Reinhardt::Reinhardt()
 {
 	collider = new Collider(transform);
-	textureRect = new TextureRect(transform, PathGaedrip + L"reinhardt.png");
+	//textureRect = new TextureRect(transform, PathGaedrip + L"reinhardt.png");
 
 	transform.AddTransform(collider->getTransformPointer());
 	transform.AddTransform(textureRect->getTransformPointer());

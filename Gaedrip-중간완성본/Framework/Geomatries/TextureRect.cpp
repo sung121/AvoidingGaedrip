@@ -1,7 +1,7 @@
 #include "Framework.h"
 #include "TextureRect.h"
 
-TextureRect::TextureRect(Vector3 position, Vector3 size, float rotation, wstring path)
+TextureRect::TextureRect(GameObject& gameObject, Vector3 position, Vector3 size, float rotation, wstring path) : Component(gameObject)
 {
 	this->path = path;
 	
@@ -12,7 +12,7 @@ TextureRect::TextureRect(Vector3 position, Vector3 size, float rotation, wstring
 
 }
 
-TextureRect::TextureRect(const Transform& transform, wstring path)
+TextureRect::TextureRect(GameObject& gameObject, const Transform& transform, wstring path) : Component(gameObject)
 {
 	this->path = path;
 
@@ -203,6 +203,22 @@ void TextureRect::GUI(const char* name)
 		ImGui::DragFloat("Rotation", &rotation);
 	}
 	ImGui::End();
+}
+
+void TextureRect::Start()
+{
+}
+
+void TextureRect::Destroy()
+{
+}
+
+void TextureRect::PhysicsUpdate()
+{
+}
+
+void TextureRect::OnCollisionEnter()
+{
 }
 
 void TextureRect::UpdateWorld()

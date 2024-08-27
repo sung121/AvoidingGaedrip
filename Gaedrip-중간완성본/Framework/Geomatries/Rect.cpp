@@ -1,8 +1,11 @@
 ﻿#include "Framework.h"
 #include "Rect.h"
 
-Rect::Rect(Vector3 position, Vector3 size, float rotation)
+#include "BasicObjects/GameObject.h"
+
+Rect::Rect(GameObject& gameObject, Vector3 position, Vector3 size, float rotation) : Component(gameObject), transform(gameObject.transform)
 {
+	transform = this->gameObject.transform;
 	transform.SetPosition(position);
 	transform.SetSize(size);
 	transform.SetRotation(rotation);
@@ -10,7 +13,7 @@ Rect::Rect(Vector3 position, Vector3 size, float rotation)
 	MakeRect();
 }
 
-Rect::Rect(const Transform& transform)
+Rect::Rect(GameObject& gameObject, const Transform& transform) : Component(gameObject)
 {
 	this->transform = transform;
 	MakeRect();
@@ -103,6 +106,22 @@ void Rect::MakeRect()
 	this->position = this->transform.GetPosition();
 	this->size = this->transform.GetSize();
 	this->rotation = this->transform.GetRotation();
+}
+
+void Rect::Start()
+{
+}
+
+void Rect::Destroy()
+{
+}
+
+void Rect::PhysicsUpdate()
+{
+}
+
+void Rect::OnCollisionEnter()
+{
 }
 
 void Rect::Update()

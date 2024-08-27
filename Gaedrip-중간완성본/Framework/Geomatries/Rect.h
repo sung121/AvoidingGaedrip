@@ -1,18 +1,29 @@
 #pragma once
+<<<<<<< Updated upstream:Gaedrip-중간완성본/Framework/Geomatries/Rect.h
 
 #include "Framework.h"
 #include "Utilities/Transform.h"
+=======
+>>>>>>> Stashed changes:AvoidGame/Framework/Geomatries/Rect.h
 
-class Rect
+class GameObject;
+
+class Rect : public Component
 {
 public:
-	Rect(Vector3 position, Vector3 size, float rotation);
-	Rect(const Transform& transform);
+	virtual void Start();
+	virtual void Destroy();
+	virtual void PhysicsUpdate();
+	virtual void OnCollisionEnter();
+	virtual void Update();
+
+public:
+	Rect(GameObject& gameObject, Vector3 position, Vector3 size, float rotation);
+	Rect(GameObject& gameObject,  const Transform& transform);
 	~Rect();
 
 	void MakeRect();
 
-	void Update();
 	void Render();
 
 	void GUI();
@@ -34,7 +45,7 @@ public:
 
 
 public:
-	Transform transform;
+	Transform& transform;
 
 protected:
 	vector<VertexColor> vertices;

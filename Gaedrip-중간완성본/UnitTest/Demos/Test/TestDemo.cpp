@@ -3,8 +3,8 @@
 
 void TestDemo::Init()
 {
-	collider = new Collider(Transform({500, 500, 0}, {500, 500, 0}, 0));
-	rect = new Rect(Transform({ 500, 500, 0 }, { 500, 500, 0 }, 0));
+	//collider = new Collider(Transform({500, 500, 0}, {500, 500, 0}, 0));
+	//rect = new Rect(Transform({ 500, 500, 0 }, { 500, 500, 0 }, 0));
 	player = new Player();
 	
 	ground = new Ground();

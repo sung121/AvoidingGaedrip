@@ -1,6 +1,12 @@
 #include "Framework.h"
 #include "DangerBox.h"
 
+<<<<<<< Updated upstream:Gaedrip-중간완성본/Framework/Gaedrip/CustomizedObjects/DangerObjects/DangerBox.cpp
+=======
+#include "BasicObjects/Collider.h"
+#include "Geomatries/Rect.h"
+
+>>>>>>> Stashed changes:AvoidGame/Framework/Gaedrip/CustomizedObjects/DangerObjects/DangerBox.cpp
 DangerBox::DangerBox()
 {
 	transform.SetSize({ 70, 150, 0 });
