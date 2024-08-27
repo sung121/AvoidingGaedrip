@@ -1,18 +1,12 @@
 #include "Framework.h"
 #include "WreckingBall.h"
 
-#include "BasicObjects/Collider.h"
-#include "Geomatries/TextureRect.h"
-#include "Utilities/Transform.h"
-
-#include "BasicObjects/Collider.h"
-#include "Geomatries/TextureRect.h"
-
 Wreckingball::Wreckingball()
 {
 	//transform = Transform(WinCenterPos, { 300, 300, 0 }, 0);
 	//textureRect = new TextureRect(transform, PathGaedrip + L"wreckingBall.png");
-	collider = new Collider(transform);
+	collider = &AddComponent<Collider>();
+	//collider = new Collider(transform);
 	transform.AddTransform(textureRect->getTransformPointer());
 	transform.AddTransform(collider->getTransformPointer());
 }

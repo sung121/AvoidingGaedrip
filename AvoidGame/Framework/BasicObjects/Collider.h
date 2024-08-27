@@ -2,12 +2,15 @@
 #include "Geomatries/Rect.h"
 
 class Transform;
+class GameObject;
 
 class Collider : public Rect
 {
 public:
-	Collider(Vector3 position, Vector3 size, float rotation);
-	Collider(const Transform& transform);
+	//Collider(GameObject& gameObject, Vector3 position, Vector3 size, float rotation);
+	//Collider(GameObject& gameObject, const Transform& transform);
+	Collider(GameObject& gameObject);
+
 	~Collider();
 
 	void MakeCollider();

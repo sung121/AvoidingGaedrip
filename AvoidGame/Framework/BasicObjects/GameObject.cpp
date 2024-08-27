@@ -1,11 +1,8 @@
 #include "Framework.h"
 #include "GameObject.h"
-<<<<<<< Updated upstream:Gaedrip-중간완성본/Framework/BasicObjects/GameObject.cpp
-=======
 
 #include "Components/Component.h"
 #include "Components/Rigidbody.h"
->>>>>>> Stashed changes:AvoidGame/Framework/BasicObjects/GameObject.cpp
 
 GameObject::GameObject() : transform(*this)
 {

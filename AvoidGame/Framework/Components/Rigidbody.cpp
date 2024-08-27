@@ -20,3 +20,7 @@ void Rigidbody::OnCollisionEnter()
 void Rigidbody::Update()
 {
 }
+
+Rigidbody::Rigidbody(GameObject& gameObject) : Component(gameObject)
+{
+}

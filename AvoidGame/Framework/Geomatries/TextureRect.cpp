@@ -1,6 +1,8 @@
 #include "Framework.h"
 #include "TextureRect.h"
 
+#include "BasicObjects/GameObject.h"
+
 TextureRect::TextureRect(GameObject& gameObject, Vector3 position, Vector3 size, float rotation, wstring path) : Component(gameObject)
 {
 	this->path = path;
@@ -18,6 +20,11 @@ TextureRect::TextureRect(GameObject& gameObject, const Transform& transform, wst
 
 	this->transform = transform;
 	
+	MakeTextureRect();
+}
+
+TextureRect::TextureRect(GameObject& gameObject) : Component(gameObject)
+{
 	MakeTextureRect();
 }
 

@@ -4,10 +4,12 @@
 HammerRight::HammerRight()
 {
 	transform.SetSize(Vector3(397 * 2, 133 * 2, 1));
-	textureRect = &AddComponent<TextureRect>();
 
+	textureRect = &AddComponent<TextureRect>();
 	//textureRect = new TextureRect(transform, PathGaedrip + L"HamaRight.png");
-	collider = new Collider(transform);
+	
+	collider = &AddComponent<Collider>();
+	//collider = new Collider(transform);
 
 	transform.AddTransform(textureRect->getTransformPointer());
 	transform.AddTransform(collider->getTransformPointer());

@@ -1,5 +1,7 @@
 #pragma once
 
+class GameObject;
+
 class TextureRect : public Component
 {
 public:
@@ -11,6 +13,7 @@ public:
 public:
 	TextureRect(GameObject& gameObject, Vector3 position, Vector3 size, float rotation, wstring path);
 	TextureRect(GameObject& gameObject, const Transform& transform, wstring path);
+	TextureRect(GameObject& gameObject);
 
 	~TextureRect();
 	void MakeTextureRect();

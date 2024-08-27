@@ -7,7 +7,8 @@ Platform::Platform()
 	transform.SetPosition({ WinCenterPos.x, WinCenterPos.y + 100, 0 });
 	transform.SetSize({basicSize});
 
-	collider = new Collider(transform);
+	collider = &AddComponent<Collider>();
+	//collider = new Collider(transform);
 	//textureRect = new TextureRect(transform, PathGaedrip + L"PlatformSmall.png");
 
 }

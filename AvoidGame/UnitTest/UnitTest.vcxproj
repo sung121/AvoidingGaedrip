@@ -213,7 +213,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Demos\AnimDemo.h" />
-    <ClInclude Include="Demos\Gaedrip\GaedripDemo.h" />
+    <ClInclude Include="Demos\Gaedrip\GaedripScene.h" />
     <ClInclude Include="Program.h" />
     <ClInclude Include="SceneBase.h" />
     <ClInclude Include="stdafx.h" />
@@ -221,7 +221,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Demos\AnimDemo.cpp" />
-    <ClCompile Include="Demos\Gaedrip\GaedripDemo.cpp" />
+    <ClCompile Include="Demos\Gaedrip\GaedripScene.cpp" />
     <ClCompile Include="Program.cpp" />
     <ClCompile Include="Demos\Test\TestDemo.cpp" />
     <ClCompile Include="SceneBase.cpp" />

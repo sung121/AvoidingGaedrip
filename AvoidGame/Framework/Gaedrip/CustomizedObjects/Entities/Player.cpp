@@ -8,12 +8,14 @@
 
 Player::Player()
 {
+	cout << "플레이어 생성" << endl;
 	rect = &AddComponent<Rect>();
 	rect->transform.SetPosition(WinCenterPos);
 	rect->transform.SetSize({500, 500, 0});
 	//transform.SetPosition(WinCenterPos);
 	//rect = new Rect(WinCenterPos, { 500, 500, 0 }, 0);
-	collider = new Collider(WinCenterPos, { 500, 500, 0 }, 0);
+	collider = &AddComponent<Collider>();
+	//collider = new Collider(WinCenterPos, { 500, 500, 0 }, 0);
 
 
 	transform.AddTransform(rect->getTransformPointer());

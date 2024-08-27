@@ -1,14 +1,7 @@
 #pragma once
-<<<<<<<< Updated upstream:Gaedrip-Ï§ëÍ∞ÑÏôÑÏÑ±Î≥∏/Framework/Utilities/Transform.h
-#include "Framework.h"
-// ≈¨∑°Ω∫ º±æ
-class Transform
-========
-
 #include "Component.h"
 
 class Transform : public Component
->>>>>>>> Stashed changes:AvoidGame/Framework/Components/Transform.h
 {
 public:
 	// Component¿ª(∏¶) ≈Î«ÿ ªÛº”µ 

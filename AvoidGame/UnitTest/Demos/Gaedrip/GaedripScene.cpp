@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "GaedripDemo.h"
+#include "GaedripScene.h"
 
 #include "BasicObjects/Collider.h"
 #include "Gaedrip/CustomizedObjects/Entities/Player.h"
@@ -12,7 +12,7 @@
 #include "Gaedrip/Managers/UserInterfaceManager.h"
 #include "Gaedrip/Items/HealPack.h"
 
-void GaedripDemo::Init()
+void GaedripScene::Init()
 {
 
 	player = new Player();
@@ -33,7 +33,7 @@ void GaedripDemo::Init()
 	userInterfaceManager->Update();
 }
 
-void GaedripDemo::Destroy()
+void GaedripScene::Destroy()
 {
 	SAFE_DELETE(background);
 	SAFE_DELETE(levelsManager);
@@ -42,11 +42,11 @@ void GaedripDemo::Destroy()
 	SAFE_DELETE(platform);
 }
 
-void GaedripDemo::PhysicsUpdate()
+void GaedripScene::PhysicsUpdate()
 {
 }
 
-void GaedripDemo::Update()
+void GaedripScene::Update()
 {
 
 	if (UserInterfaceManager::getisMain() == false)
@@ -85,7 +85,7 @@ void GaedripDemo::Update()
 
 }
 
-void GaedripDemo::Render()
+void GaedripScene::Render()
 {
 	background->Render();
 	// 메인이 아니라면
@@ -103,7 +103,7 @@ void GaedripDemo::Render()
 	
 }
 
-void GaedripDemo::Execute()
+void GaedripScene::Execute()
 {
 	player->CheckAndSetRuns();
 	player->MoveWidth();
@@ -119,7 +119,7 @@ void GaedripDemo::Execute()
 	levelsManager->Execute();
 }
 
-void GaedripDemo::CheckJump()
+void GaedripScene::CheckJump()
 {
 	if ((player->getReachsAtJumpLimit() == false) && (player->getJumps() == true))
 	{
@@ -129,7 +129,7 @@ void GaedripDemo::CheckJump()
 	GameManager::ApplyGravityPlayer(player, 165);
 }
 
-void GaedripDemo::CheckCollideGround()
+void GaedripScene::CheckCollideGround()
 {
 	if (GameManager::CheckCollide(player->getCollider(), ground->getCollider()))
 	{
@@ -150,7 +150,7 @@ void GaedripDemo::CheckCollideGround()
 	}
 }
 
-void GaedripDemo::ChangeRenderState()
+void GaedripScene::ChangeRenderState()
 {
 	if (Keyboard::Get()->Down('O'))
 	{
@@ -158,7 +158,7 @@ void GaedripDemo::ChangeRenderState()
 	}
 }
 
-void GaedripDemo::Reset()
+void GaedripScene::Reset()
 {
 	player->Reset();
 	levelsManager->Reset();
@@ -166,11 +166,11 @@ void GaedripDemo::Reset()
 	healPack->Reset();
 }
 
-void GaedripDemo::PostRender()
+void GaedripScene::PostRender()
 {
 }
 
-void GaedripDemo::GUI()
+void GaedripScene::GUI()
 {
 	player->GUI();
 }

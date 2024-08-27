@@ -9,5 +9,8 @@ class Rigidbody : public Component
 	void PhysicsUpdate() override;
 	void OnCollisionEnter() override;
 	void Update() override;
+
+public:
+	Rigidbody(GameObject& gameObject);
 };
 

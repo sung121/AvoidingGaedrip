@@ -2,7 +2,7 @@
 #include "Program.h"
 #include "Systems/Window.h"
 #include "Demos/Test/TestDemo.h"
-#include "Demos/Gaedrip/GaedripDemo.h"
+#include "Demos/Gaedrip/GaedripScene.h"
 #include "SceneBase.h"
 #include "Components/Rigidbody.h"
 
@@ -46,7 +46,7 @@ void Program::Init()
 
 	//Push(new CupheadDemo);
 
-	Push(new SceneBase);
+	Push(new GaedripScene());
 	
 	//Push(new TestDemo);
 	
@@ -63,22 +63,13 @@ void Program::Destroy()
 		SAFE_DELETE(obj);
 	}
 }
-
-void Program::PhysicsUpdate()
-{
-	for (IObject* obj : objs)
-	{
-		obj->PhysicsUpdate();
-	}
-}
-
 void Program::PhysicsUpdate()
 {
 	for (SceneBase* obj : objs)
 	{
 		for (size_t i = 0; i < obj->getRigidbodies().size(); i++)
 		{
-			obj->getRigidbodies()[i].gameObject;
+			obj->getRigidbodies()[i]->gameObject;
 		}
 	}
 }

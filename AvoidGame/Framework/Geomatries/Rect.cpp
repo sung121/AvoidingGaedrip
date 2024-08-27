@@ -3,22 +3,25 @@
 
 #include "BasicObjects/GameObject.h"
 
-Rect::Rect(GameObject& gameObject, Vector3 position, Vector3 size, float rotation) : Component(gameObject), transform(gameObject.transform)
+//Rect::Rect(GameObject& gameObject, Vector3 position, Vector3 size, float rotation) : Component(gameObject), transform(gameObject.transform)
+//{
+//	transform = this->gameObject.transform;
+//	transform.SetPosition(position);
+//	transform.SetSize(size);
+//	transform.SetRotation(rotation);
+//
+//	MakeRect();
+//}
+//
+//Rect::Rect(GameObject& gameObject, const Transform& transform) : Component(gameObject)
+//{
+//	this->transform = transform;
+//	MakeRect();
+//}
+Rect::Rect(GameObject& gameObject) : Component(gameObject), transform(gameObject.transform)
 {
-	transform = this->gameObject.transform;
-	transform.SetPosition(position);
-	transform.SetSize(size);
-	transform.SetRotation(rotation);
-
 	MakeRect();
 }
-
-Rect::Rect(GameObject& gameObject, const Transform& transform) : Component(gameObject)
-{
-	this->transform = transform;
-	MakeRect();
-}
-
 Rect::~Rect()
 {
 

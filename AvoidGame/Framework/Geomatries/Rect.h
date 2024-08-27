@@ -12,8 +12,7 @@ public:
 	virtual void Update();
 
 public:
-	Rect(GameObject& gameObject, Vector3 position, Vector3 size, float rotation);
-	Rect(GameObject& gameObject,  const Transform& transform);
+	Rect(GameObject& gameObject);
 	~Rect();
 
 	void MakeRect();

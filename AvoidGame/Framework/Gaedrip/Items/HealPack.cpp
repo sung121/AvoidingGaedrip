@@ -8,7 +8,9 @@ HealPack::HealPack()
 	//transform = Transform(pos, { 100, 100, 0 }, 0);
 
 	//textureRect = new TextureRect(pos, Vector3(100, 100, 1), 0.0f, PathGaedrip + L"healPack.png");
-	collider = new Collider(pos, Vector3(100, 100, 1), 0.0f);
+	
+	collider = &AddComponent<Collider>();
+	//collider = new Collider(pos, Vector3(100, 100, 1), 0.0f);
 	
 
 	transform.AddTransform(textureRect->getTransformPointer());

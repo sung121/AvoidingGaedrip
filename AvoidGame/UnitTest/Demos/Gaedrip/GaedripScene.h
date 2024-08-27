@@ -1,4 +1,5 @@
 #pragma once
+#include "SceneBase.h"
 
 class Collider;
 class Player;
@@ -12,26 +13,26 @@ class UserInterfaceManager;
 class HealPack;
 
 
-class GaedripDemo : public IObject
+class GaedripScene : public SceneBase
 {
 public:
 	void Init() override;
-	void Destroy() override;
-
 	void PhysicsUpdate() override;
 	void Update() override;
 	void Render() override;
-	
+	void PostRender() override;
+	void GUI() override;
+	void Destroy() override;
+
 	void Execute();
+	
 	void CheckJump();
 	void CheckCollideGround();
 	void ChangeRenderState();
 
-	void Reset();
 	
-	void PostRender() override;
-	void GUI() override;
 
+	void Reset();
 
 private:
 	

@@ -15,11 +15,11 @@ public:
 	void GUI() override;
 
 public:
-	vector<GameObject> getGameObjects() { return gameObjects; };
-	vector<Rigidbody> getRigidbodies() { return rigidBodies; };
+	vector<GameObject*>& getGameObjects() { return gameObjects; };
+	vector<Rigidbody*>& getRigidbodies() { return rigidBodies; };
 
 private:
-	vector<GameObject> gameObjects;
-	vector<Rigidbody> rigidBodies;
+	vector<GameObject*> gameObjects;
+	vector<Rigidbody*> rigidBodies;
 };
 

@@ -2,18 +2,15 @@
 #include "DangerBox.h"
 
 #include "BasicObjects/Collider.h"
-#include "Geomatries/Rect.h"
-#include "Utilities/StandardTransform.h"
-
-#include "BasicObjects/Collider.h"
-#include "Geomatries/Rect.h"
 
 DangerBox::DangerBox()
 {
 	transform.SetSize({ 70, 150, 0 });
 	transform.SetPosition({2000, 2000, 0});
-	rect = new Rect(transform);
-	collider = new Collider(transform);
+	rect = &AddComponent<Rect>();
+	//rect = new Rect(transform);
+	//collider = new Collider(transform);
+	collider = &AddComponent<Collider>();
 
 	transform.AddTransform(rect->getTransformPointer());
 	transform.AddTransform(collider->getTransformPointer());

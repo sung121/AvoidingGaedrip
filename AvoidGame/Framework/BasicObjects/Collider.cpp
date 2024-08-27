@@ -1,17 +1,18 @@
 #include "Framework.h"
 #include "Collider.h"
+#include "GameObject.h"
 
-#include "Geomatries/Rect.h"
-#include "Utilities/Transform.h"
+//Collider::Collider(GameObject& gameObject, Vector3 position, Vector3 size, float rotation) : Rect(gameObject, position, size, rotation)
+//{
+//	MakeCollider();
+//}
+//
+//Collider::Collider(GameObject& gameObject, const Transform& transform) :Rect(gameObject, transform)
+//{
+//	MakeCollider();
+//}
 
-Collider::Collider(Vector3 position, Vector3 size, float rotation) 
-	: Rect(position, size, rotation)
-{
-	MakeCollider();
-}
-
-Collider::Collider(const Transform& transform)
-	:Rect(transform)
+Collider::Collider(GameObject& gameObject) : Rect(gameObject)
 {
 	MakeCollider();
 }
