@@ -13,14 +13,14 @@ class UserInterfaceManager;
 
 class Rect;
 
-class LevelManager
+class LevelManager : public Component
 {
 public:
-	LevelManager(Ground* ground, Player* player, HealPack* healPack);
+	//LevelManager(Ground* ground, Player* player, HealPack* healPack);
+	LevelManager(GameObject& gameObject);
 	~LevelManager();
 
 	void Update();
-	void Render();
 
 	void Reset();
 

@@ -100,8 +100,14 @@ void Program::Render()
 {
 	vpb->SetVSBuffer(1);
 
-	for (IObject* obj : objs)
+	for (SceneBase* obj : objs)
+	{
 		obj->Render();
+		for (size_t i = 0; i < obj->getRenderableObjects().size(); i++)
+		{
+			obj->getRenderableObjects()[i]->Render();
+		}
+	}
 }
 
 void Program::PostRender()

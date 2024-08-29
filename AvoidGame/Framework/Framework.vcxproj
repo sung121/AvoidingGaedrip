@@ -247,6 +247,7 @@
     <ClCompile Include="Gaedrip\CustomizedObjects\DangerObjects\Reinhardt\Reinhardt.cpp" />
     <ClCompile Include="Gaedrip\Items\Items.cpp" />
     <ClCompile Include="Gaedrip\Items\HealPack.cpp" />
+    <ClCompile Include="Components\IRenderable.cpp" />
     <ClCompile Include="Renders\IA\IndexBuffer.cpp" />
     <ClCompile Include="Renders\IA\InputLayout.cpp" />
     <ClCompile Include="Renders\IA\VertexBuffer.cpp" />
@@ -299,6 +300,7 @@
     <ClInclude Include="Gaedrip\Managers\LevelManager.h" />
     <ClInclude Include="Gaedrip\CustomizedObjects\DangerObjects\Reinhardt\Reinhardt.h" />
     <ClInclude Include="Gaedrip\Items\Items.h" />
+    <ClInclude Include="Components\IRenderable.h" />
     <ClInclude Include="Renders\IA\IndexBuffer.h" />
     <ClInclude Include="Renders\IA\InputLayout.h" />
     <ClInclude Include="Renders\IA\VertexBuffer.h" />

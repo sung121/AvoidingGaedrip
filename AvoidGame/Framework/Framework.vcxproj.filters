@@ -48,6 +48,7 @@
     <ClCompile Include="Components\Rigidbody.cpp" />
     <ClCompile Include="Components\Component.cpp" />
     <ClCompile Include="BasicObjects\Singleton.cpp" />
+    <ClCompile Include="Components\IRenderable.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Systems\Graphics.h" />
@@ -102,6 +103,7 @@
     <ClInclude Include="Components\Component.h" />
     <ClInclude Include="Components\Rigidbody.h" />
     <ClInclude Include="BasicObjects\Singleton.h" />
+    <ClInclude Include="Components\IRenderable.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />

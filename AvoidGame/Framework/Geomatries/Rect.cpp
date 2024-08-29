@@ -249,3 +249,7 @@ void Rect::SetTransform(Transform& transform)
 	this->transform = transform;
 }
 
+void Rect::PostRender()
+{
+}
+

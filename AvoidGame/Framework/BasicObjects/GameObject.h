@@ -28,6 +28,11 @@ public:
 			currentScene->getRigidbodies().push_back((Rigidbody*)component);
 			//currentScene->getRigidbodies() = new vector<Rigidbody>();
 		}
+		else if ((typeid(T) == typeid(Rect)) || (typeid(T) == typeid(TextureRect)))
+		{
+			currentScene->getRenderableObjects().push_back((IRenderable*)component);
+		}
+
 		return *component;
 	};
 

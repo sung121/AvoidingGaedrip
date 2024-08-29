@@ -1,8 +1,10 @@
 #pragma once
 
+#include "Components/IRenderable.h"
+
 class GameObject;
 
-class Rect : public Component
+class Rect : public Component, public IRenderable
 {
 public:
 	virtual void Start();
@@ -72,5 +74,9 @@ protected:
 	float printCycle = 0;
 
 	char tag = '\0';
+
+
+	// IRenderable을(를) 통해 상속됨
+	void PostRender() override;
 
 };

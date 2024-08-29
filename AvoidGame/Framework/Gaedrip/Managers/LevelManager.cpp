@@ -13,7 +13,42 @@
 #include "Gaedrip/Managers/GameManager.h"
 
 
-LevelManager::LevelManager(Ground* ground, Player* player, HealPack* healPack) : ground(ground), player(player), healPack(healPack)
+//LevelManager::LevelManager(Ground* ground, Player* player, HealPack* healPack) : ground(ground), player(player), healPack(healPack)
+//{
+//	hammerLeft = new HammerLeft();
+//	hammerRight = new HammerRight();
+//	reinhardt = new Reinhardt();
+//
+//	for (UINT i = 0; i < EQSize; i++)
+//		dangerBoxs.push_back(new DangerBox());
+//
+//	// 18도 돌리기
+//	reinhardt->transform.SetPosition(Vector3(2000, 2000, 0));
+//
+//	hammerLeft->transform.SetPosition({2000, 2000, 0});
+//
+//	hammerRight->transform.SetPosition({ 2000, 2000, 0 });
+//	hammerLeft->transform.SetSize(Vector3(397 * 2, 133 * 2, 1));
+//
+//	wreckingball = new Wreckingball();
+//
+//	wreckingball->transform.SetPosition(WinCenterPos);
+//
+//	//skull = new TextureRect(Transform({2000, 2000, 0}, {40, 40, 0}, 0), PathGaedrip + L"mccreeUltimateBlueMagenta.png");
+//	//circle = new TextureRect(Vector3(2000, 2000, 0), Vector3(500, 500, 0), 0, PathGaedrip + L"mccreeUltimateCircleMagenta2.png");
+//	
+//	//wall = new Rect(Vector3(2000, 2000, 0), Vector3(200, 400, 0), 0);
+//	//wall->SetColor(Color(0, 100, 0, 0));
+//
+//	
+//	progressTime = 0;
+//
+//	postmpX = 0 - wreckingball->transform.GetSizeOfWidth() / 2;
+//	postmpY = 720 + wreckingball->transform.GetSizeOfHeight() / 2;
+//
+//}
+
+LevelManager::LevelManager(GameObject& gameObject) : Component(gameObject)
 {
 	hammerLeft = new HammerLeft();
 	hammerRight = new HammerRight();
@@ -25,7 +60,7 @@ LevelManager::LevelManager(Ground* ground, Player* player, HealPack* healPack) :
 	// 18도 돌리기
 	reinhardt->transform.SetPosition(Vector3(2000, 2000, 0));
 
-	hammerLeft->transform.SetPosition({2000, 2000, 0});
+	hammerLeft->transform.SetPosition({ 2000, 2000, 0 });
 
 	hammerRight->transform.SetPosition({ 2000, 2000, 0 });
 	hammerLeft->transform.SetSize(Vector3(397 * 2, 133 * 2, 1));
@@ -36,16 +71,15 @@ LevelManager::LevelManager(Ground* ground, Player* player, HealPack* healPack) :
 
 	//skull = new TextureRect(Transform({2000, 2000, 0}, {40, 40, 0}, 0), PathGaedrip + L"mccreeUltimateBlueMagenta.png");
 	//circle = new TextureRect(Vector3(2000, 2000, 0), Vector3(500, 500, 0), 0, PathGaedrip + L"mccreeUltimateCircleMagenta2.png");
-	
+
 	//wall = new Rect(Vector3(2000, 2000, 0), Vector3(200, 400, 0), 0);
 	//wall->SetColor(Color(0, 100, 0, 0));
 
-	
+
 	progressTime = 0;
 
 	postmpX = 0 - wreckingball->transform.GetSizeOfWidth() / 2;
 	postmpY = 720 + wreckingball->transform.GetSizeOfHeight() / 2;
-
 }
 
 LevelManager::~LevelManager()
@@ -92,37 +126,37 @@ void LevelManager::Update()
 	}
 }
 
-void LevelManager::Render()
-{
-	for (int i = 0; i < dangerBoxs.size(); i++)
-	{
-		dangerBoxs[i]->Render();
-	}
-	switch (currentLevel)
-	{
-	case LevelReinhardt:
-		reinhardt->Render();
-		hammerLeft->Render();
-		hammerRight->Render();
-		break;
-
-	case LevelWreckingBall:
-		wreckingball->Render();
-		break;
-
-	case LevelSigma:
-		break;
-
-	case LevelCassidy:
-		skull->Render();
-		circle->Render();
-		wall->Render();
-
-		break;
-	default:
-		break;
-	}
-}
+//void LevelManager::Render()
+//{
+//	for (int i = 0; i < dangerBoxs.size(); i++)
+//	{
+//		dangerBoxs[i]->Render();
+//	}
+//	switch (currentLevel)
+//	{
+//	case LevelReinhardt:
+//		reinhardt->Render();
+//		hammerLeft->Render();
+//		hammerRight->Render();
+//		break;
+//
+//	case LevelWreckingBall:
+//		wreckingball->Render();
+//		break;
+//
+//	case LevelSigma:
+//		break;
+//
+//	case LevelCassidy:
+//		skull->Render();
+//		circle->Render();
+//		wall->Render();
+//
+//		break;
+//	default:
+//		break;
+//	}
+//}
 
 void LevelManager::Reset()
 {

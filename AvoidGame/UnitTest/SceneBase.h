@@ -2,6 +2,7 @@
 
 class GameObject;
 class Rigidbody;
+class IRenderable;
 
 class SceneBase : public IObject
 {
@@ -17,9 +18,11 @@ public:
 public:
 	vector<GameObject*>& getGameObjects() { return gameObjects; };
 	vector<Rigidbody*>& getRigidbodies() { return rigidBodies; };
+	vector<IRenderable*>& getRenderableObjects() { return renderableObjects; };
 
 private:
 	vector<GameObject*> gameObjects;
 	vector<Rigidbody*> rigidBodies;
+	vector<IRenderable*> renderableObjects;
 };
 

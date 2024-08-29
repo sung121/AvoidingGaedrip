@@ -3,6 +3,7 @@
 
 #include "Components/Component.h"
 #include "Components/Rigidbody.h"
+#include "Components/IRenderable.h"
 
 void SceneBase::Init()
 {

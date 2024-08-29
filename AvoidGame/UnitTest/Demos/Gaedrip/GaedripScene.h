@@ -41,7 +41,7 @@ private:
 	Ground* ground = nullptr;
 	Platform* platform = nullptr;
 	Background* background = nullptr;
-	LevelManager* levelsManager = nullptr;
+	LevelManager* levelManager = nullptr;
 	vector<DangerBox*> dangerBoxs;
 	UserInterfaceManager* userInterfaceManager = nullptr;
 

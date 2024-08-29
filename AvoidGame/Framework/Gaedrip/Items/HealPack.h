@@ -3,7 +3,7 @@
 #include "BasicObjects/Collider.h"
 #include "Geomatries/TextureRect.h"
 
-class HealPack : public GameObject
+class HealPack : public Component
 {
 public:
 	HealPack();
@@ -11,7 +11,6 @@ public:
 
 	// GameObject을(를) 통해 상속됨
 	void Update() override;
-	void Render() override;
 
 	void Reset();
 

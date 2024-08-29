@@ -212,6 +212,10 @@ void TextureRect::GUI(const char* name)
 	ImGui::End();
 }
 
+void TextureRect::PostRender()
+{
+}
+
 void TextureRect::Start()
 {
 }

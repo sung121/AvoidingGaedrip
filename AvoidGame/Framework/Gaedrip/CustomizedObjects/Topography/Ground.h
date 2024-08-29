@@ -3,7 +3,7 @@
 #include "Geomatries/TextureRect.h"
 #include "BasicObjects/Collider.h"
 
-class Ground : GameObject
+class Ground : public Component
 {
 public:
 	Ground();
@@ -11,16 +11,16 @@ public:
 
 	// GameObject을(를) 통해 상속됨
 	void Update() override;
-	void Render() override;
+	
 
 	void ChangerRenderState();
 
 	Collider* getCollider() { return collider; }
 
-	StandardTransform& getTransform() const { return transform; }
+	//StandardTransform& getTransform() const { return transform; }
 
 public:
-	StandardTransform& transform = GameObject::transform;
+	//StandardTransform& transform = GameObject::transform;
 
 private:
 

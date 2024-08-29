@@ -16,18 +16,28 @@ void GaedripScene::Init()
 {
 
 	player = new Player();
-	healPack = new HealPack();
-	ground = new Ground();
-	background = new Background();
-	levelsManager = new LevelManager(ground, player, healPack);
-	dangerBoxs = levelsManager->getDangerBoxs();
+	
+	GameObject* healPackObj = new GameObject();
+	healPack = &healPackObj->AddComponent<HealPack>();
+	
+	
+	GameObject* groundObj = new GameObject();
+	ground = &groundObj->AddComponent<Ground>();
+	
+	GameObject* backgroundObj = new GameObject();
+	background = &backgroundObj->AddComponent<Background>();
+	
+	GameObject* levelManagerObj = new GameObject();
+	levelManager = &levelManagerObj->AddComponent<LevelManager>();
+	
+	dangerBoxs = levelManager->getDangerBoxs();
 	
 	ground->transform.SetPositionY(-40);
 
 	background->Update();
 	player->Update();
 	healPack->Update();
-	levelsManager->Update();
+	levelManager->Update();
 	ground->Update();
 	//UserInterfaceManager::Get()->Update();
 }
@@ -35,7 +45,7 @@ void GaedripScene::Init()
 void GaedripScene::Destroy()
 {
 	SAFE_DELETE(background);
-	SAFE_DELETE(levelsManager);
+	SAFE_DELETE(levelManager);
 	SAFE_DELETE(player);
 	SAFE_DELETE(ground);
 	SAFE_DELETE(platform);
@@ -56,7 +66,7 @@ void GaedripScene::Update()
 		background->Update();
 		player->Update();
 		healPack->Update();
-		levelsManager->Update();
+		levelManager->Update();
 		ground->Update();
 		UserInterfaceManager::Get()->Update();
 		return;
@@ -75,7 +85,7 @@ void GaedripScene::Update()
 		background->Update();
 		player->Update();
 		healPack->Update();
-		levelsManager->Update();
+		levelManager->Update();
 		ground->Update();
 		UserInterfaceManager::Get()->Update();
 
@@ -93,7 +103,7 @@ void GaedripScene::Render()
 		background->Render();
 		player->Render();
 		healPack->Render();
-		levelsManager->Render();
+		levelManager->Render();
 		ground->Render();
 		UserInterfaceManager::Get()->Render();
 		return;
@@ -115,7 +125,7 @@ void GaedripScene::Execute()
 
 	player->Jump();
 
-	levelsManager->Execute();
+	levelManager->Execute();
 }
 
 void GaedripScene::CheckJump()
@@ -160,7 +170,7 @@ void GaedripScene::ChangeRenderState()
 void GaedripScene::Reset()
 {
 	player->Reset();
-	levelsManager->Reset();
+	levelManager->Reset();
 	//UserInterfaceManager::Get()->Reset();
 	healPack->Reset();
 }

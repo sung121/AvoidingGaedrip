@@ -1,8 +1,10 @@
 #pragma once
 
+#include "Components/IRenderable.h"
+
 class GameObject;
 
-class TextureRect : public Component
+class TextureRect : public Component, public IRenderable
 {
 public:
 	virtual void Start();
@@ -72,5 +74,9 @@ protected:
 
 
 
+
+
+	// IRenderable을(를) 통해 상속됨
+	void PostRender() override;
 
 };

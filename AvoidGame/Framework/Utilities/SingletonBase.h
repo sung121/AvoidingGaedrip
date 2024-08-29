@@ -18,13 +18,14 @@ public:
 
 	static T* Get()
 	{
-		if (instance != nullptr)
+		return instance;
+		/*if (instance != nullptr)
 		{
 			return instance;
 		}
 		
 		instance = new T();
-		return instance;
+		return instance;*/
 	}
 
 protected:
