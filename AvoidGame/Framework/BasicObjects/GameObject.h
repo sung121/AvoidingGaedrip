@@ -8,18 +8,17 @@ class StandardTransform;
 class GameObject
 {
 public:
+	GameObject(SceneBase* currentScene);
 	GameObject();
 	~GameObject();
 
-	virtual void Update() = 0;
-	virtual void Render() = 0;
+	virtual void Update();
+	virtual void Render();
 	
-	Transform* getTransformPointer() { return &transform; }
-
 	template <typename T>
 	T& AddComponent()
 	{
-		static_assert(std::is_base_of<Component, T>::value, "T must be derived from Component");
+		//static_assert(std::is_base_of<Component, T>::value, "T must be derived from Component");
 		T* component = new T(*this);
 		components.push_back(component);
 
@@ -32,9 +31,24 @@ public:
 		return *component;
 	};
 
+	template <typename T>
+	T& GetComponent()
+	{
+		
+		for (int i = 0; i < components.size(); i++)
+		{
+			if (typeid(T) == typeid(components[i]))
+			{
+				T& component = *((T*)components[i]);
+				return component;
+			}
+		}
+	}
+
 public:
 	vector<Component*> components;
 	StandardTransform transform;
+	//vector<std::reference_wrapper<TextureRect>> scoreImages;
 
 private:
 	SceneBase* currentScene;

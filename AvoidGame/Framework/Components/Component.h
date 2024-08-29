@@ -17,10 +17,16 @@ public:
 	virtual void Update()			= 0;
 
 public:
-	GameObject& GetGameObject() { return gameObject; }
+
+	GameObject& CreateGameObject();
 
 public:
-	GameObject& gameObject;
+	GameObject* GetGameObject() { return gameObject; }
+
+public:
+	GameObject* gameObject;
+	GameObject* parent;
+	vector<GameObject*> childs;
 	Transform& transform;
 
 };

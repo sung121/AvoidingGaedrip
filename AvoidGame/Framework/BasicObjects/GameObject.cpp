@@ -4,6 +4,12 @@
 #include "Components/Component.h"
 #include "Components/Rigidbody.h"
 
+GameObject::GameObject(SceneBase* currentScene) : transform(*this)
+{
+	this->currentScene = currentScene;
+	components.push_back(&transform);
+}
+
 GameObject::GameObject() : transform(*this)
 {
 	components.push_back(&transform);
@@ -15,4 +21,12 @@ GameObject::~GameObject()
 	{
 		delete components[i];
 	}
+}
+
+void GameObject::Update()
+{
+}
+
+void GameObject::Render()
+{
 }

@@ -47,6 +47,7 @@
     <ClCompile Include="Gaedrip\Items\HealPack.cpp" />
     <ClCompile Include="Components\Rigidbody.cpp" />
     <ClCompile Include="Components\Component.cpp" />
+    <ClCompile Include="BasicObjects\Singleton.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Systems\Graphics.h" />
@@ -100,6 +101,7 @@
     <ClInclude Include="Gaedrip\Items\HealPack.h" />
     <ClInclude Include="Components\Component.h" />
     <ClInclude Include="Components\Rigidbody.h" />
+    <ClInclude Include="BasicObjects\Singleton.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />

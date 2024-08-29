@@ -257,6 +257,7 @@
     <ClCompile Include="Renders\Shaders\VertexShader.cpp" />
     <ClCompile Include="Renders\States.cpp" />
     <ClCompile Include="Components\Rigidbody.cpp" />
+    <ClCompile Include="BasicObjects\Singleton.cpp" />
     <ClCompile Include="Systems\Sound.cpp" />
     <ClCompile Include="Systems\Graphics.cpp" />
     <ClCompile Include="Systems\Keyboard.cpp" />
@@ -309,6 +310,7 @@
     <ClInclude Include="Renders\Shaders\PixelShader.h" />
     <ClInclude Include="Renders\Shaders\VertexShader.h" />
     <ClInclude Include="Renders\States.h" />
+    <ClInclude Include="BasicObjects\Singleton.h" />
     <ClInclude Include="Systems\Sound.h" />
     <ClInclude Include="Systems\Graphics.h" />
     <ClInclude Include="Systems\Keyboard.h" />

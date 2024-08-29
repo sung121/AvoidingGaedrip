@@ -110,6 +110,8 @@ typedef UINT		uint;
 #include "Geomatries/AnimationRect.h"
 
 #include "BasicObjects/Collider.h"
+#include "BasicObjects/GameObject.h"
+#include "BasicObjects/Singleton.h"
 
 
 

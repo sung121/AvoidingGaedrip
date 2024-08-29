@@ -48,7 +48,7 @@ void GameManager::AttackPlayer(Player* player, int dmg, bool makesImmortal, floa
 	
 	if (player->getHp() <= 0) // Á×À¸¸é 
 	{
-		UserInterfaceManager::setIsMain(true);
+		UserInterfaceManager::Get()->setIsMain(true);
 	}
 
 	if (!makesImmortal) 

@@ -21,7 +21,6 @@ void GaedripScene::Init()
 	background = new Background();
 	levelsManager = new LevelManager(ground, player, healPack);
 	dangerBoxs = levelsManager->getDangerBoxs();
-	userInterfaceManager = new UserInterfaceManager();
 	
 	ground->transform.SetPositionY(-40);
 
@@ -30,7 +29,7 @@ void GaedripScene::Init()
 	healPack->Update();
 	levelsManager->Update();
 	ground->Update();
-	userInterfaceManager->Update();
+	//UserInterfaceManager::Get()->Update();
 }
 
 void GaedripScene::Destroy()
@@ -49,7 +48,7 @@ void GaedripScene::PhysicsUpdate()
 void GaedripScene::Update()
 {
 
-	if (UserInterfaceManager::getisMain() == false)
+	if (UserInterfaceManager::Get()->getisMain() == false)
 	{
 		
 		Execute();
@@ -59,15 +58,15 @@ void GaedripScene::Update()
 		healPack->Update();
 		levelsManager->Update();
 		ground->Update();
-		userInterfaceManager->Update();
+		UserInterfaceManager::Get()->Update();
 		return;
 	}
 	
-	userInterfaceManager->ManageMainScreen();
-	userInterfaceManager->Update();
+	//UserInterfaceManager::Get()->ManageMainScreen();
+	//UserInterfaceManager::Get()->Update();
 	
 	// 리셋을 하겠다면
-	if (UserInterfaceManager::getReseted() == true)
+	if (UserInterfaceManager::Get()->getReseted() == true)
 	{
 		Reset();
 		for (int i = 0; i < dangerBoxs.size(); i++)
@@ -78,9 +77,9 @@ void GaedripScene::Update()
 		healPack->Update();
 		levelsManager->Update();
 		ground->Update();
-		userInterfaceManager->Update();
+		UserInterfaceManager::Get()->Update();
 
-		UserInterfaceManager::setReseted(false);
+		UserInterfaceManager::Get()->setReseted(false);
 	}
 
 }
@@ -89,17 +88,17 @@ void GaedripScene::Render()
 {
 	background->Render();
 	// 메인이 아니라면
-	if (UserInterfaceManager::getisMain() == false)
+	if (UserInterfaceManager::Get()->getisMain() == false)
 	{
 		background->Render();
 		player->Render();
 		healPack->Render();
 		levelsManager->Render();
 		ground->Render();
-		userInterfaceManager->Render();
+		UserInterfaceManager::Get()->Render();
 		return;
 	}
-	userInterfaceManager->Render();
+	UserInterfaceManager::Get()->Render();
 	
 }
 
@@ -107,10 +106,10 @@ void GaedripScene::Execute()
 {
 	player->CheckAndSetRuns();
 	player->MoveWidth();
-	userInterfaceManager->ChangeMoveButtonColor(player);
-	userInterfaceManager->AdjustEnergyBar(player);
-	userInterfaceManager->AdjustScoreImage();
-	userInterfaceManager->AdjustHpBar(player);
+	//UserInterfaceManager::Get()->ChangeMoveButtonColor(player);
+	//UserInterfaceManager::Get()->AdjustEnergyBar(player);
+	//UserInterfaceManager::Get()->AdjustScoreImage();
+	//UserInterfaceManager::Get()->AdjustHpBar(player);
 	CheckJump();
 	CheckCollideGround();
 
@@ -162,7 +161,7 @@ void GaedripScene::Reset()
 {
 	player->Reset();
 	levelsManager->Reset();
-	userInterfaceManager->Reset();
+	//UserInterfaceManager::Get()->Reset();
 	healPack->Reset();
 }
 

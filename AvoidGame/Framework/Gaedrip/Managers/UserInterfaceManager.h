@@ -12,45 +12,44 @@ struct UserInterfaces
 	UserInterfaces();
 	~UserInterfaces();
 
-	//void Reset();
+	void Reset();
 
-	//TextureRect* gear = nullptr;
-	//TextureRect* buttonStart = nullptr;
-	//TextureRect* buttonStart2 = nullptr;
-	//TextureRect* buttonSetting = nullptr;
-	//TextureRect* title = nullptr;
+	GameObject* gear = nullptr;
+	GameObject* buttonStart = nullptr;
+	GameObject* buttonStart2 = nullptr;
+	GameObject* buttonSetting = nullptr;
+	GameObject* title = nullptr;
 
-	//TextureRect* keyRightOff = nullptr;
-	//TextureRect* keyRightOn = nullptr;
-	//TextureRect* keyLeftOff = nullptr;
-	//TextureRect* keyLeftOn = nullptr;
-	//TextureRect* keyJump = nullptr;
+	GameObject* keyRightOff = nullptr;
+	GameObject* keyRightOn = nullptr;
+	GameObject* keyLeftOff = nullptr;
+	GameObject* keyLeftOn = nullptr;
+	GameObject* keyJump = nullptr;
 
-	//vector<Rect*> lifeImages;
-	//int lifeCount = 5;
+	vector<GameObject*> lifeImages;
+	int lifeCount = 5;
 
-	//vector<TextureRect*> scoreImages;
-	//Vector3 scoreStandardPos = { 500, 500, 0 };
+	vector<GameObject*> scoreImages;
+	Vector3 scoreStandardPos = { 500, 500, 0 };
 
-	//Transform lifeTransform = Transform(Vector3(1100, 650, 0), Vector3(20, 40, 1), 0.00f);
-	//Vector3 lifePosition = lifeTransform.GetPosition();
-	//Vector3 lifeSize = lifeTransform.GetSize();
-
-
-	//
-	//Rect* blinder = nullptr;
-	//Rect* energyBar = nullptr;
+	GameObject* lifeTransform = nullptr;
+	
+	Vector3 lifePosition = lifeTransform->transform.GetPosition();
+	Vector3 lifeSize = lifeTransform->transform.GetSize();
+	
+	GameObject* blinder = nullptr;
+	GameObject* energyBar = nullptr;
 };
 
-class UserInterfaceManager : public GameObject
+class UserInterfaceManager : public Singleton<UserInterfaceManager>
 {
 public:
-	UserInterfaceManager();
+	UserInterfaceManager(GameObject& gameObject);
 	~UserInterfaceManager();
 
 	// GameObject을(를) 통해 상속됨
 	void Update() override;
-	void Render() override;
+	void Render();
 
 	void Reset();
 	void ManageMainScreen();
@@ -65,14 +64,14 @@ public:
 	void AdjustScoreImage();
 	void AdjustHpBar(Player* player);
 
-	static bool getisMain() { return UserInterfaceManager::isMain; }
-	static void setIsMain(bool isMain) { UserInterfaceManager::isMain = isMain; }
+	bool getisMain() { return isMain; }
+	void setIsMain(bool isMain) { isMain = isMain; }
 
-	static bool getReseted() { return UserInterfaceManager::reseted; }
-	static void setReseted(bool reseted) { UserInterfaceManager::reseted = reseted; }
+	bool getReseted() { return reseted; }
+	void setReseted(bool reseted) { reseted = reseted; }
 
 private:
-	void setNumberPieceImage(TextureRect* scorePieceImage, int score);
+	void setNumberPieceImage(TextureRect& scorePieceImage, int score);
 
 private:
 
@@ -81,13 +80,23 @@ private:
 	bool isKeyRightTurnedOn = false;
 	bool isKeyLeftTurnedOn = false;
 
-	static bool isMain;
-	static bool reseted;
+	bool isMain;
+	bool reseted;
 
 	float score = 0;
 
 	char selectionNumber = 0;
 
+
+
+	// Singleton을(를) 통해 상속됨
+	void Start() override;
+
+	void Destroy() override;
+
+	void PhysicsUpdate() override;
+
+	void OnCollisionEnter() override;
 
 };
 
